@@ -26,6 +26,7 @@ class Item:
         self.reciepe = []
 
     def setup_reciepe(self, items: list):
+        """Creates Item Objects from raw json data and adds it to the reciepe list"""
         for item in items:
             if item.ticker in self.reciepe_raw.keys():
                 self.reciepe.append(

@@ -14,11 +14,13 @@ class Producer:
         self.current_time: int = self.current_production.time
 
     def tick(self, time: tuple):
+        """Ticks the production by 1"""
         self.current_time -= 1
         if self.current_time <= 0:
             self.complete_production(time)
 
     def complete_production(self, time: tuple):
+        """Completes the production of an item"""
         write_to_log(
             f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Produced: {self.current_production.name}, {self.current_production.produced_per_cycle} units"
         )
@@ -35,6 +37,7 @@ class Producer:
         self.withdraw_resources(time)
 
     def withdraw_resources(self, time: tuple):
+        """Witdraws the required resources from the inventory"""
         for item in self.current_production.reciepe:
             write_to_log(
                 f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Withdraw Request: {item['item'].name}, {item['amount']} units --> {self.current_production.name}"
@@ -42,6 +45,7 @@ class Producer:
             self.inventory.remove_stock(item["item"], item["amount"], time)
 
     def deposit_resources(self, time: tuple):
+        """Desposits the resources to the inventory"""
         self.inventory.add_stock(
             self.current_production, self.current_production.produced_per_cycle, time
         )
