@@ -1,4 +1,3 @@
-from asyncore import write
 import string
 from logger import create_log, write_to_log, add_partition
 from item import Item
@@ -14,33 +13,39 @@ class Producer:
         self.current_production: Item = self.queue[self.current_production_index]
         self.current_time: int = self.current_production.time
 
-        self.withdraw_resources((0, 0))
-
     def tick(self, time: tuple):
+        """Ticks the production by 1"""
         self.current_time -= 1
         if self.current_time <= 0:
             self.complete_production(time)
 
     def complete_production(self, time: tuple):
+        """Completes the production of an item"""
         write_to_log(
-            f"[{time[0]}H:{time[1]}M] [{self.name}] Production Complete: {self.current_production.name}, Produced: {self.current_production.produced_per_cycle}"
+            f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Produced: {self.current_production.name}, {self.current_production.produced_per_cycle} units"
         )
         self.deposit_resources(time)
 
-        if len(self.queue) != 0 and self.current_production_index < len(self.queue):
-            self.current_production_index += 1
-        else:
+        if self.current_production_index + 1 >= len(self.queue):
             self.current_production_index = 0
+        else:
+            self.current_production_index += 1
 
         self.current_production = self.queue[self.current_production_index]
+
         self.current_time = self.current_production.time
         self.withdraw_resources(time)
 
     def withdraw_resources(self, time: tuple):
+        """Witdraws the required resources from the inventory"""
         for item in self.current_production.reciepe:
+            write_to_log(
+                f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Withdraw Request: {item['item'].name}, {item['amount']} units --> {self.current_production.name}"
+            )
             self.inventory.remove_stock(item["item"], item["amount"], time)
 
     def deposit_resources(self, time: tuple):
+        """Desposits the resources to the inventory"""
         self.inventory.add_stock(
             self.current_production, self.current_production.produced_per_cycle, time
         )
