@@ -21,7 +21,7 @@ class Inventory:
         self.current_volume += item.volume * amount
 
         write_to_log(
-            f"[{time[0]}D:{time[1]}H:{time[2]}M] Added {item.name}: {amount} units"
+            f"[{time[0]}D:{time[1]}H:{time[2]}M] [Inventory] Added {item.name}: {amount} units"
         )
 
     def remove_stock(self, item: Item, amount: int, time: tuple):
@@ -29,21 +29,25 @@ class Inventory:
 
         if item.name not in self.stock:
             write_to_log(
-                f"[{time[0]}D:{time[1]}H:{time[2]}M] {item.name} doesn't exist in the inventory."
+                f"[{time[0]}D:{time[1]}H:{time[2]}M] [Inventory] {item.name} doesn't exist in the inventory."
             )
-            return
+            self.log_inventory()
+            raise Exception("Error! Check Logs")
 
         self.stock[item.name]["amount"] -= amount
 
         if self.stock[item.name]["amount"] < 0:
-            write_to_log(f"[{time[0]}D:{time[1]}H:{time[2]}M] {item.name} has run out.")
-            return
+            write_to_log(
+                f"[{time[0]}D:{time[1]}H:{time[2]}M] [Inventory] {item.name} has run out."
+            )
+            self.log_inventory()
+            raise Exception("Error! Check Logs")
 
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
 
         write_to_log(
-            f"[{time[0]}D:{time[1]}H:{time[2]}M] Removed {item.name}: {amount} units"
+            f"[{time[0]}D:{time[1]}H:{time[2]}M] [Inventory] Removed {item.name}: {amount} units"
         )
 
     def log_inventory(self):

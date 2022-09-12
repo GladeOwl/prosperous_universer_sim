@@ -24,7 +24,6 @@ def simulate_time(producers: list):
 
         for producer in producers:
             producer.tick((days, hours, minutes))
-        # write_to_log(str(runtime))
 
     print(f"Done in {days}D:{hours}H:{minutes}M ({runtime} minutes).")
 
@@ -51,7 +50,7 @@ def setup_simulation(inventory: Inventory):
             )
             items.append(item)
 
-            inventory.add_stock(item, 10, (0, 0, 0))
+            inventory.add_stock(item, 20, (0, 0, 0))
 
             producer_present = False
             for producer in producers:
