@@ -53,6 +53,16 @@ Simluation Setup Completed.
 [0D:21H:12M] [Inventory] Removed High-Carb Grain: 1 units
 [0D:21H:12M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [0D:21H:12M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 1
+------------------
+|| Inventory Stock ||
+|| Water : 37 ||
+|| Triglyceride Nuts : 16 ||
+|| High-Carb Grain : 16 ||
+|| Protein-Rich Beans : 16 ||
+|| Basic Rations : 50 ||
+------------------
 [1D:4H:12M] [Rig] Production Complete: Water, Produced: 6
 [1D:4H:12M] [Inventory] Added Water: 6 units
 [1D:4H:16M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -87,6 +97,16 @@ Simluation Setup Completed.
 [1D:18H:24M] [Inventory] Removed High-Carb Grain: 1 units
 [1D:18H:24M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [1D:18H:24M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 2
+------------------
+|| Inventory Stock ||
+|| Water : 43 ||
+|| Triglyceride Nuts : 25 ||
+|| High-Carb Grain : 13 ||
+|| Protein-Rich Beans : 13 ||
+|| Basic Rations : 80 ||
+------------------
 [2D:1H:21M] [Rig] Production Complete: Water, Produced: 6
 [2D:1H:21M] [Inventory] Added Water: 6 units
 [2D:1H:28M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -131,6 +151,16 @@ Simluation Setup Completed.
 [2D:22H:40M] [Inventory] Removed High-Carb Grain: 1 units
 [2D:22H:40M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [2D:22H:40M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 3
+------------------
+|| Inventory Stock ||
+|| Water : 49 ||
+|| Triglyceride Nuts : 21 ||
+|| High-Carb Grain : 21 ||
+|| Protein-Rich Beans : 9 ||
+|| Basic Rations : 120 ||
+------------------
 [3D:5H:33M] [Rig] Production Complete: Water, Produced: 6
 [3D:5H:33M] [Inventory] Added Water: 6 units
 [3D:5H:44M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -165,6 +195,16 @@ Simluation Setup Completed.
 [3D:23H:0M] [Inventory] Added Protein-Rich Beans: 12 units
 [3D:23H:0M] [Farmstead] Withdraw Request for 1 of Water
 [3D:23H:0M] [Inventory] Removed Water: 1 units
+------------------
+Day 4
+------------------
+|| Inventory Stock ||
+|| Water : 66 ||
+|| Triglyceride Nuts : 18 ||
+|| High-Carb Grain : 18 ||
+|| Protein-Rich Beans : 18 ||
+|| Basic Rations : 150 ||
+------------------
 [4D:2H:42M] [Rig] Production Complete: Water, Produced: 6
 [4D:2H:42M] [Inventory] Added Water: 6 units
 [4D:2H:56M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -197,6 +237,16 @@ Simluation Setup Completed.
 [4D:17H:4M] [Inventory] Removed Protein-Rich Beans: 1 units
 [4D:23H:51M] [Rig] Production Complete: Water, Produced: 6
 [4D:23H:51M] [Inventory] Added Water: 6 units
+------------------
+Day 5
+------------------
+|| Inventory Stock ||
+|| Water : 90 ||
+|| Triglyceride Nuts : 15 ||
+|| High-Carb Grain : 15 ||
+|| Protein-Rich Beans : 15 ||
+|| Basic Rations : 180 ||
+------------------
 [5D:0H:8M] [Food Processor] Production Complete: Basic Rations, Produced: 10
 [5D:0H:8M] [Inventory] Added Basic Rations: 10 units
 [5D:0H:8M] [Food Processor] Withdraw Request for 1 of Triglyceride Nuts
@@ -239,6 +289,16 @@ Simluation Setup Completed.
 [5D:21H:20M] [Inventory] Removed High-Carb Grain: 1 units
 [5D:21H:20M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [5D:21H:20M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 6
+------------------
+|| Inventory Stock ||
+|| Water : 96 ||
+|| Triglyceride Nuts : 23 ||
+|| High-Carb Grain : 11 ||
+|| Protein-Rich Beans : 11 ||
+|| Basic Rations : 220 ||
+------------------
 [6D:4H:3M] [Rig] Production Complete: Water, Produced: 6
 [6D:4H:3M] [Inventory] Added Water: 6 units
 [6D:4H:24M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -273,6 +333,16 @@ Simluation Setup Completed.
 [6D:18H:32M] [Inventory] Removed High-Carb Grain: 1 units
 [6D:18H:32M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [6D:18H:32M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 7
+------------------
+|| Inventory Stock ||
+|| Water : 96 ||
+|| Triglyceride Nuts : 20 ||
+|| High-Carb Grain : 20 ||
+|| Protein-Rich Beans : 8 ||
+|| Basic Rations : 250 ||
+------------------
 [7D:1H:12M] [Rig] Production Complete: Water, Produced: 6
 [7D:1H:12M] [Inventory] Added Water: 6 units
 [7D:1H:36M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -317,6 +387,16 @@ Simluation Setup Completed.
 [7D:22H:48M] [Inventory] Removed High-Carb Grain: 1 units
 [7D:22H:48M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [7D:22H:48M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 8
+------------------
+|| Inventory Stock ||
+|| Water : 119 ||
+|| Triglyceride Nuts : 16 ||
+|| High-Carb Grain : 16 ||
+|| Protein-Rich Beans : 16 ||
+|| Basic Rations : 290 ||
+------------------
 [8D:5H:24M] [Rig] Production Complete: Water, Produced: 6
 [8D:5H:24M] [Inventory] Added Water: 6 units
 [8D:5H:52M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -347,6 +427,16 @@ Simluation Setup Completed.
 [8D:20H:0M] [Inventory] Removed High-Carb Grain: 1 units
 [8D:20H:0M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [8D:20H:0M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 9
+------------------
+|| Inventory Stock ||
+|| Water : 137 ||
+|| Triglyceride Nuts : 13 ||
+|| High-Carb Grain : 13 ||
+|| Protein-Rich Beans : 13 ||
+|| Basic Rations : 320 ||
+------------------
 [9D:2H:33M] [Rig] Production Complete: Water, Produced: 6
 [9D:2H:33M] [Inventory] Added Water: 6 units
 [9D:3H:4M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -383,6 +473,16 @@ Simluation Setup Completed.
 [9D:17H:12M] [Inventory] Removed Protein-Rich Beans: 1 units
 [9D:23H:42M] [Rig] Production Complete: Water, Produced: 6
 [9D:23H:42M] [Inventory] Added Water: 6 units
+------------------
+Day 10
+------------------
+|| Inventory Stock ||
+|| Water : 149 ||
+|| Triglyceride Nuts : 22 ||
+|| High-Carb Grain : 10 ||
+|| Protein-Rich Beans : 10 ||
+|| Basic Rations : 350 ||
+------------------
 [10D:0H:16M] [Food Processor] Production Complete: Basic Rations, Produced: 10
 [10D:0H:16M] [Inventory] Added Basic Rations: 10 units
 [10D:0H:16M] [Food Processor] Withdraw Request for 1 of Triglyceride Nuts
@@ -425,6 +525,16 @@ Simluation Setup Completed.
 [10D:21H:28M] [Inventory] Removed High-Carb Grain: 1 units
 [10D:21H:28M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [10D:21H:28M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 11
+------------------
+|| Inventory Stock ||
+|| Water : 149 ||
+|| Triglyceride Nuts : 18 ||
+|| High-Carb Grain : 18 ||
+|| Protein-Rich Beans : 6 ||
+|| Basic Rations : 390 ||
+------------------
 [11D:3H:54M] [Rig] Production Complete: Water, Produced: 6
 [11D:3H:54M] [Inventory] Added Water: 6 units
 [11D:4H:32M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -459,6 +569,16 @@ Simluation Setup Completed.
 [11D:21H:0M] [Inventory] Added Protein-Rich Beans: 12 units
 [11D:21H:0M] [Farmstead] Withdraw Request for 1 of Water
 [11D:21H:0M] [Inventory] Removed Water: 1 units
+------------------
+Day 12
+------------------
+|| Inventory Stock ||
+|| Water : 166 ||
+|| Triglyceride Nuts : 15 ||
+|| High-Carb Grain : 15 ||
+|| Protein-Rich Beans : 15 ||
+|| Basic Rations : 420 ||
+------------------
 [12D:1H:3M] [Rig] Production Complete: Water, Produced: 6
 [12D:1H:3M] [Inventory] Added Water: 6 units
 [12D:1H:44M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -499,6 +619,16 @@ Simluation Setup Completed.
 [12D:22H:56M] [Inventory] Removed High-Carb Grain: 1 units
 [12D:22H:56M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [12D:22H:56M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 13
+------------------
+|| Inventory Stock ||
+|| Water : 190 ||
+|| Triglyceride Nuts : 11 ||
+|| High-Carb Grain : 11 ||
+|| Protein-Rich Beans : 11 ||
+|| Basic Rations : 460 ||
+------------------
 [13D:5H:15M] [Rig] Production Complete: Water, Produced: 6
 [13D:5H:15M] [Inventory] Added Water: 6 units
 [13D:6H:0M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -533,6 +663,16 @@ Simluation Setup Completed.
 [13D:20H:8M] [Inventory] Removed High-Carb Grain: 1 units
 [13D:20H:8M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [13D:20H:8M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 14
+------------------
+|| Inventory Stock ||
+|| Water : 196 ||
+|| Triglyceride Nuts : 20 ||
+|| High-Carb Grain : 8 ||
+|| Protein-Rich Beans : 8 ||
+|| Basic Rations : 490 ||
+------------------
 [14D:2H:24M] [Rig] Production Complete: Water, Produced: 6
 [14D:2H:24M] [Inventory] Added Water: 6 units
 [14D:3H:12M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -569,6 +709,16 @@ Simluation Setup Completed.
 [14D:17H:20M] [Inventory] Removed Protein-Rich Beans: 1 units
 [14D:23H:33M] [Rig] Production Complete: Water, Produced: 6
 [14D:23H:33M] [Inventory] Added Water: 6 units
+------------------
+Day 15
+------------------
+|| Inventory Stock ||
+|| Water : 202 ||
+|| Triglyceride Nuts : 17 ||
+|| High-Carb Grain : 17 ||
+|| Protein-Rich Beans : 5 ||
+|| Basic Rations : 520 ||
+------------------
 [15D:0H:24M] [Food Processor] Production Complete: Basic Rations, Produced: 10
 [15D:0H:24M] [Inventory] Added Basic Rations: 10 units
 [15D:0H:24M] [Food Processor] Withdraw Request for 1 of Triglyceride Nuts
@@ -611,6 +761,16 @@ Simluation Setup Completed.
 [15D:21H:36M] [Inventory] Removed High-Carb Grain: 1 units
 [15D:21H:36M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [15D:21H:36M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 16
+------------------
+|| Inventory Stock ||
+|| Water : 219 ||
+|| Triglyceride Nuts : 13 ||
+|| High-Carb Grain : 13 ||
+|| Protein-Rich Beans : 13 ||
+|| Basic Rations : 560 ||
+------------------
 [16D:3H:45M] [Rig] Production Complete: Water, Produced: 6
 [16D:3H:45M] [Inventory] Added Water: 6 units
 [16D:4H:40M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -641,6 +801,16 @@ Simluation Setup Completed.
 [16D:18H:48M] [Inventory] Removed High-Carb Grain: 1 units
 [16D:18H:48M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [16D:18H:48M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 17
+------------------
+|| Inventory Stock ||
+|| Water : 237 ||
+|| Triglyceride Nuts : 10 ||
+|| High-Carb Grain : 10 ||
+|| Protein-Rich Beans : 10 ||
+|| Basic Rations : 590 ||
+------------------
 [17D:0H:54M] [Rig] Production Complete: Water, Produced: 6
 [17D:0H:54M] [Inventory] Added Water: 6 units
 [17D:1H:52M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -685,6 +855,16 @@ Simluation Setup Completed.
 [17D:23H:4M] [Inventory] Removed High-Carb Grain: 1 units
 [17D:23H:4M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [17D:23H:4M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 18
+------------------
+|| Inventory Stock ||
+|| Water : 249 ||
+|| Triglyceride Nuts : 18 ||
+|| High-Carb Grain : 6 ||
+|| Protein-Rich Beans : 6 ||
+|| Basic Rations : 630 ||
+------------------
 [18D:5H:6M] [Rig] Production Complete: Water, Produced: 6
 [18D:5H:6M] [Inventory] Added Water: 6 units
 [18D:6H:8M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -719,6 +899,16 @@ Simluation Setup Completed.
 [18D:20H:16M] [Inventory] Removed High-Carb Grain: 1 units
 [18D:20H:16M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [18D:20H:16M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 19
+------------------
+|| Inventory Stock ||
+|| Water : 249 ||
+|| Triglyceride Nuts : 15 ||
+|| High-Carb Grain : 15 ||
+|| Protein-Rich Beans : 3 ||
+|| Basic Rations : 660 ||
+------------------
 [19D:2H:15M] [Rig] Production Complete: Water, Produced: 6
 [19D:2H:15M] [Inventory] Added Water: 6 units
 [19D:3H:20M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -755,6 +945,16 @@ Simluation Setup Completed.
 [19D:19H:0M] [Inventory] Removed Water: 1 units
 [19D:23H:24M] [Rig] Production Complete: Water, Produced: 6
 [19D:23H:24M] [Inventory] Added Water: 6 units
+------------------
+Day 20
+------------------
+|| Inventory Stock ||
+|| Water : 272 ||
+|| Triglyceride Nuts : 12 ||
+|| High-Carb Grain : 12 ||
+|| Protein-Rich Beans : 12 ||
+|| Basic Rations : 690 ||
+------------------
 [20D:0H:32M] [Food Processor] Production Complete: Basic Rations, Produced: 10
 [20D:0H:32M] [Inventory] Added Basic Rations: 10 units
 [20D:0H:32M] [Food Processor] Withdraw Request for 1 of Triglyceride Nuts
@@ -793,6 +993,16 @@ Simluation Setup Completed.
 [20D:21H:44M] [Inventory] Removed High-Carb Grain: 1 units
 [20D:21H:44M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [20D:21H:44M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 21
+------------------
+|| Inventory Stock ||
+|| Water : 290 ||
+|| Triglyceride Nuts : 8 ||
+|| High-Carb Grain : 8 ||
+|| Protein-Rich Beans : 8 ||
+|| Basic Rations : 730 ||
+------------------
 [21D:3H:36M] [Rig] Production Complete: Water, Produced: 6
 [21D:3H:36M] [Inventory] Added Water: 6 units
 [21D:4H:48M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -827,6 +1037,16 @@ Simluation Setup Completed.
 [21D:18H:56M] [Inventory] Removed High-Carb Grain: 1 units
 [21D:18H:56M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [21D:18H:56M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 22
+------------------
+|| Inventory Stock ||
+|| Water : 296 ||
+|| Triglyceride Nuts : 17 ||
+|| High-Carb Grain : 5 ||
+|| Protein-Rich Beans : 5 ||
+|| Basic Rations : 760 ||
+------------------
 [22D:0H:45M] [Rig] Production Complete: Water, Produced: 6
 [22D:0H:45M] [Inventory] Added Water: 6 units
 [22D:2H:0M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -871,6 +1091,16 @@ Simluation Setup Completed.
 [22D:23H:12M] [Inventory] Removed High-Carb Grain: 1 units
 [22D:23H:12M] [Food Processor] Withdraw Request for 1 of Protein-Rich Beans
 [22D:23H:12M] [Inventory] Removed Protein-Rich Beans: 1 units
+------------------
+Day 23
+------------------
+|| Inventory Stock ||
+|| Water : 302 ||
+|| Triglyceride Nuts : 13 ||
+|| High-Carb Grain : 13 ||
+|| Protein-Rich Beans : 1 ||
+|| Basic Rations : 800 ||
+------------------
 [23D:4H:57M] [Rig] Production Complete: Water, Produced: 6
 [23D:4H:57M] [Inventory] Added Water: 6 units
 [23D:6H:16M] [Food Processor] Production Complete: Basic Rations, Produced: 10

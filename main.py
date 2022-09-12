@@ -1,5 +1,6 @@
 import json
 import math
+from re import A
 from logger import create_log, write_to_log, add_partition
 from inventory import Inventory
 from production import Producer
@@ -15,6 +16,8 @@ def simulate_time(producers: list):
     hours = 0
     minutes = 0
 
+    current_day = 0
+
     while runtime < max_runtime:
         runtime += 1
 
@@ -24,6 +27,12 @@ def simulate_time(producers: list):
 
         for producer in producers:
             producer.tick((days, hours, minutes))
+
+        if current_day != days:
+            current_day = days
+            add_partition()
+            write_to_log(f"Day {current_day}")
+            inventory.log_inventory()
 
     print(f"Done in {days}D:{hours}H:{minutes}M ({runtime} minutes).")
 
