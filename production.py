@@ -8,47 +8,33 @@ class Producer:
         self.name: string = name
         self.queue: list = queue
         self.inventory: Inventory = inventory
+        self.current_production_index: int = 0
+        self.current_production: Item = self.queue[self.current_production_index]
+        self.current_time: int = self.current_production.time
 
     def tick(self):
         self.current_time -= 1
-
-    def setup_production(self):
-        self.current_production = self.queue[0]
-        self.current_time = self.current_production.time
-
-    def withdraw_resources(self):
-        for item in self.current_production.reciepe:
-            self.inventory.remove_stock()
-
-
-class Production:
-    def __init__(
-        self,
-        item: Item,
-        inventory: Inventory,
-    ) -> None:
-        self.item = item
-        self.current_time = item.time
-        self.items_required = item.reciepe
-        self.inventory = inventory
-
-    def gather_resources(self):
-        """Gather required resources from the inventory"""
-
-        if len(self.items_required) > 0:
-            for item in self.items_required:
-                self.inventory.remove_stock(item[0], item[1])
-
-    def tick(self):
-        """Tick the production by 1"""
-
-        self.current_time -= 1
-
-        if self.current_time >= 0:
+        if self.current_time <= 0:
             self.complete_production()
 
     def complete_production(self):
-        """Checks if the production cycle is complete"""
+        print(
+            f"Production Complete: {self.current_production.name}, Produced: {self.current_production.produced_per_cycle}"
+        )
+        self.deposit_resources()
 
-        self.current_time = self.total_time
-        print("Production is complete")
+        if self.current_production_index >= len(self.queue):
+            self.current_production_index += 1
+        else:
+            self.current_production_index = 0
+
+        self.current_production = self.queue[self.current_production_index]
+
+    def withdraw_resources(self):
+        for item in self.current_production.reciepe:
+            self.inventory.remove_stock(item["item"], item["amount"])
+
+    def deposit_resources(self):
+        self.inventory.add_stock(
+            self.current_production, self.current_production.produced_per_cycle
+        )

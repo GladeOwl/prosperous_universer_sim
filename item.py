@@ -12,6 +12,7 @@ class Item:
         producer: string,
         reciepe_raw: dict,
         time: int,
+        produced_per_cycle: int,
     ) -> None:
         self.name: string = name
         self.ticker: string = ticker
@@ -21,6 +22,7 @@ class Item:
         self.producer: string = producer
         self.reciepe_raw: dict = reciepe_raw
         self.time: int = time
+        self.produced_per_cycle: int = produced_per_cycle
 
     def setup_reciepe(self, items: list):
         self.reciepe = []

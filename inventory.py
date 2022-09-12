@@ -19,6 +19,8 @@ class Inventory:
         self.current_weight += item.weight * amount
         self.current_volume += item.volume * amount
 
+        print(f"Added {item.name}: {amount} units")
+
     def remove_stock(self, item: Item, amount: int):
         """Removes the requested item from the inventory stock"""
 
@@ -34,6 +36,8 @@ class Inventory:
 
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
+
+        print(f"Removed {item.name}: {amount} units")
 
     def print_inventory(self):
         print(self.stock)

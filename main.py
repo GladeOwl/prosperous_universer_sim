@@ -1,10 +1,10 @@
 from inventory import Inventory
-from production import Production
+from production import Producer
 from item import Item
 import json
 
 
-def simulate_time(production: Production):
+def simulate_time(producers: list):
     max_runtime: int = 24 * 60
     hours: int = 0
     runtime: int = 0  # in minutes
@@ -14,7 +14,8 @@ def simulate_time(production: Production):
         runtime += 1
         hour_minutes += 1
 
-        production.tick()
+        for producer in producers:
+            producer.tick()
 
         if hour_minutes == 60:
             hour_minutes = 0
@@ -38,6 +39,7 @@ def setup_simulation(inventory: Inventory):
                 category=item["category"],
                 reciepe_raw=item["reciepe"],
                 time=item["time"],
+                produced_per_cycle=item["produced_per_cycle"],
             )
             items.append(item)
 
@@ -45,13 +47,14 @@ def setup_simulation(inventory: Inventory):
 
             producer_present = False
             for producer in producers:
-                if producer["name"] == item.producer:
+                if producer.name == item.producer:
                     producer_present = True
-                    producer["queue"].append(item)
+                    producer.queue.append(item)
                     break
 
             if not producer_present:
-                producers.append({"name": item.producer, "queue": [item]})
+                producer = Producer(item.producer, [item], inventory)
+                producers.append(producer)
 
     for item in items:
         item.setup_reciepe(items)
@@ -64,5 +67,4 @@ if __name__ == "__main__":
     inventory = Inventory(max_weight, max_volume)
 
     items, producers = setup_simulation(inventory)
-
-    # simulate_time(production)
+    simulate_time(producers)
