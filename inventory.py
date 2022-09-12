@@ -13,8 +13,7 @@ class Inventory:
         """Adds the requested stock to the inventory stock"""
 
         if item.name not in self.stock:
-            self.stock[item.name]["info"] = item
-            self.stock[item.name]["amount"] = 0
+            self.stock[item.name] = {"info": item, "amount": 0}
 
         self.stock[item.name]["amount"] += amount
         self.current_weight += item.weight * amount
@@ -35,3 +34,6 @@ class Inventory:
 
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
+
+    def print_inventory(self):
+        print(self.stock)

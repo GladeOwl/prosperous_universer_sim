@@ -56,12 +56,14 @@ def setup_simulation(inventory: Inventory):
             if not producer_present:
                 producers.append({"name": item.producer, "queue": [item]})
 
+    return items, producers
+
 
 if __name__ == "__main__":
     max_weight = 1500
     max_volume = 1500
     inventory = Inventory(max_weight, max_volume)
 
-    production = setup_simulation(inventory)
+    items, producers = setup_simulation(inventory)
 
     # simulate_time(production)
