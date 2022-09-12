@@ -1,0 +1,18 @@
+Log Start
+------------------
+[0H:0M] Added Water: 10 units
+[0H:0M] Added Triglyceride Nuts: 10 units
+[0H:0M] Added High-Carb Grain: 10 units
+[0H:0M] Added Protein-Rich Beans: 10 units
+[0H:0M] Added Basic Rations: 10 units
+Simluation Setup Completed.
+------------------
+|| Inventory Stock ||
+|| Water : 10 ||
+|| Triglyceride Nuts : 10 ||
+|| High-Carb Grain : 10 ||
+|| Protein-Rich Beans : 10 ||
+|| Basic Rations : 10 ||
+------------------
+[7H:3M] [Rig] Production Complete: Water, Produced: 6
+[7H:3M] Added Water: 6 units

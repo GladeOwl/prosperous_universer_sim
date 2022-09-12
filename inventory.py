@@ -1,4 +1,5 @@
 from item import Item
+from logger import create_log, write_to_log, add_partition
 
 
 class Inventory:
@@ -9,7 +10,7 @@ class Inventory:
         self.current_volume: float = 0
         self.stock: dict = {}
 
-    def add_stock(self, item: Item, amount: int):
+    def add_stock(self, item: Item, amount: int, time: tuple):
         """Adds the requested stock to the inventory stock"""
 
         if item.name not in self.stock:
@@ -19,25 +20,31 @@ class Inventory:
         self.current_weight += item.weight * amount
         self.current_volume += item.volume * amount
 
-        print(f"Added {item.name}: {amount} units")
+        write_to_log(f"[{time[0]}H:{time[1]}M] Added {item.name}: {amount} units")
 
-    def remove_stock(self, item: Item, amount: int):
+    def remove_stock(self, item: Item, amount: int, time: tuple):
         """Removes the requested item from the inventory stock"""
 
         if item.name not in self.stock:
-            print(f"{item.name} doesn't exist in the inventory.")
+            write_to_log(
+                f"[{time[0]}H:{time[1]}M] {item.name} doesn't exist in the inventory."
+            )
             return
 
         self.stock[item.name]["amount"] -= amount
 
-        if self.stock[item.name] < 0:
-            print(f"{item.name} has run out.")
+        if self.stock[item.name]["amount"] < 0:
+            write_to_log(f"[{time[0]}H:{time[1]}M] {item.name} has run out.")
             return
 
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
 
-        print(f"Removed {item.name}: {amount} units")
+        write_to_log(f"[{time[0]}H:{time[1]}M] Removed {item.name}: {amount} units")
 
-    def print_inventory(self):
-        print(self.stock)
+    def log_inventory(self):
+        write_to_log("|| Inventory Stock ||")
+        for item in self.stock:
+            amount = self.stock[item]["amount"]
+            write_to_log(f"|| {item} : {amount} ||")
+        add_partition()
