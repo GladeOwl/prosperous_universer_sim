@@ -24,10 +24,6 @@ def simulate_time(production: Production):
 
 
 def setup_simulation(inventory: Inventory):
-    # water = Item(name = "water", ticker = "H2O", weight = 0.2, volume = 0.2, producer = "rig", category = "liquids")
-    # water_production = Production(water, 423, True, inventory)
-    # return water_production
-
     items = []
     producers = []
     with open("./data.json", encoding="utf-8") as jsonf:
@@ -40,7 +36,8 @@ def setup_simulation(inventory: Inventory):
                 volume=item["volume"],
                 producer=item["producer"],
                 category=item["category"],
-                reciepe=item["reciepe"],
+                reciepe_raw=item["reciepe"],
+                time=item["time"],
             )
             items.append(item)
 
@@ -56,6 +53,8 @@ def setup_simulation(inventory: Inventory):
             if not producer_present:
                 producers.append({"name": item.producer, "queue": [item]})
 
+    for item in items:
+        item.setup_reciepe(items)
     return items, producers
 
 

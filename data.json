@@ -7,7 +7,7 @@
             "volume": 0.2,
             "producer": "Rig",
             "category": "Liquids",
-            "reciepe": [],
+            "reciepe": {},
             "time": 423
         },
         {
@@ -17,9 +17,7 @@
             "volume": 1,
             "producer": "Farmstead",
             "category": "Agricultural Products",
-            "reciepe": [
-                {"material": "H2O", "amount": 1}
-            ],
+            "reciepe": {"H2O": 1},
             "time": 2220
         },
         {
@@ -29,9 +27,7 @@
             "volume": 1,
             "producer": "Farmstead",
             "category": "Agricultural Products",
-            "reciepe": [
-                {"material": "H2O", "amount": 12}
-            ],
+            "reciepe": {"H2O": 12},
             "time": 1680
         },
         {
@@ -41,9 +37,7 @@
             "volume": 1,
             "producer": "Farmstead",
             "category": "Agricultural Products",
-            "reciepe": [
-                {"material": "H2O", "amount": 18}
-            ],
+            "reciepe": {"H2O": 18},
             "time": 1800
         },
         {
@@ -53,11 +47,7 @@
             "volume": 0.1,
             "producer": "Food Processor",
             "category": "Consumables (B)",
-            "reciepe": [
-                {"material": "GRN", "amount": 1},
-                {"material": "NUT", "amount": 1},
-                {"material": "BEA", "amount": 1}
-            ],
+            "reciepe": {"GRN": 1,"NUT": 1,"BEA": 1},
             "time": 424
         }
     ]

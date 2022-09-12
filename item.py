@@ -10,7 +10,8 @@ class Item:
         weight: float,
         volume: float,
         producer: string,
-        reciepe: list,
+        reciepe_raw: dict,
+        time: int,
     ) -> None:
         self.name: string = name
         self.ticker: string = ticker
@@ -18,4 +19,13 @@ class Item:
         self.weight: float = weight
         self.volume: float = volume
         self.producer: string = producer
-        self.reciepe: list = reciepe
+        self.reciepe_raw: dict = reciepe_raw
+        self.time: int = time
+
+    def setup_reciepe(self, items: list):
+        self.reciepe = []
+        for item in items:
+            if item.ticker in self.reciepe_raw.keys():
+                self.reciepe.append(
+                    {"item": item, "amount": self.reciepe_raw[item.ticker]}
+                )

@@ -1,23 +1,35 @@
+import string
 from item import Item
 from inventory import Inventory
 
 
 class Producer:
-    pass
+    def __init__(self, name: string, queue: list, inventory: Inventory) -> None:
+        self.name: string = name
+        self.queue: list = queue
+        self.inventory: Inventory = inventory
+
+    def tick(self):
+        self.current_time -= 1
+
+    def setup_production(self):
+        self.current_production = self.queue[0]
+        self.current_time = self.current_production.time
+
+    def withdraw_resources(self):
+        for item in self.current_production.reciepe:
+            self.inventory.remove_stock()
 
 
 class Production:
     def __init__(
         self,
         item: Item,
-        total_time: int,
         inventory: Inventory,
-        items_required: list = None,
     ) -> None:
         self.item = item
-        self.total_time = total_time
-        self.current_time = total_time
-        self.items_required = items_required
+        self.current_time = item.time
+        self.items_required = item.reciepe
         self.inventory = inventory
 
     def gather_resources(self):
