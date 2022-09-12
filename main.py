@@ -1,5 +1,5 @@
 import json
-from math import prod
+import math
 from logger import create_log, write_to_log, add_partition
 from inventory import Inventory
 from production import Producer
@@ -7,29 +7,26 @@ from item import Item
 
 
 def simulate_time(producers: list):
-    max_runtime: int = 100 * 60
-    hours: int = 0
+    runtime_in_days = 30
+    max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
-    hour_minutes: int = 0
+
+    days = 0
+    hours = 0
+    minutes = 0
 
     while runtime < max_runtime:
         runtime += 1
-        hour_minutes += 1
+
+        days = math.floor(runtime / 24 / 60)
+        hours = math.floor(runtime / 60 % 24)
+        minutes = math.floor(runtime % 60)
 
         for producer in producers:
-            producer.tick((hours, hour_minutes))
-
-        if hour_minutes == 60:
-            hour_minutes = 0
-            hours += 1
-
-        if hours % 24 == 0:
-            # add_partition()
-            pass
-
+            producer.tick((days, hours, minutes))
         # write_to_log(str(runtime))
 
-    print(f"Done in {hours}H:{hour_minutes}M ({runtime} minutes).")
+    print(f"Done in {days}D:{hours}H:{minutes}M ({runtime} minutes).")
 
 
 def setup_simulation(inventory: Inventory):
@@ -54,7 +51,7 @@ def setup_simulation(inventory: Inventory):
             )
             items.append(item)
 
-            inventory.add_stock(item, 10, (0, 0))
+            inventory.add_stock(item, 10, (0, 0, 0))
 
             producer_present = False
             for producer in producers:
@@ -85,7 +82,7 @@ if __name__ == "__main__":
     inventory.log_inventory()
 
     for producer in producers:
-        producer.withdraw_resources((0, 0))
+        producer.withdraw_resources((0, 0, 0))
 
     simulate_time(producers)
     inventory.log_inventory()

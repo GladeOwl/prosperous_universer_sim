@@ -20,7 +20,7 @@ class Producer:
 
     def complete_production(self, time: tuple):
         write_to_log(
-            f"[{time[0]}H:{time[1]}M] [{self.name}] Production Complete: {self.current_production.name}, Produced: {self.current_production.produced_per_cycle}"
+            f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Production Complete: {self.current_production.name}, Produced: {self.current_production.produced_per_cycle}"
         )
         self.deposit_resources(time)
 
