@@ -95,4 +95,7 @@ if __name__ == "__main__":
         producer.withdraw_resources((0, 0, 0))
 
     simulate_time(producers)
+
+    add_partition()
+    write_to_log("End of Simulation")
     inventory.log_inventory()

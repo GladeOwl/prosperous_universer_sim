@@ -485,6 +485,8 @@ Day 10
 || Basic Rations : 350 ||
 ------------------
 ------------------
+End of Simulation
+------------------
 || Inventory Stock ||
 || Water : 149 ||
 || Triglyceride Nuts : 22 ||
