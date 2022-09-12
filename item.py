@@ -23,9 +23,9 @@ class Item:
         self.reciepe_raw: dict = reciepe_raw
         self.time: int = time
         self.produced_per_cycle: int = produced_per_cycle
+        self.reciepe = []
 
     def setup_reciepe(self, items: list):
-        self.reciepe = []
         for item in items:
             if item.ticker in self.reciepe_raw.keys():
                 self.reciepe.append(

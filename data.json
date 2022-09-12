@@ -45,7 +45,7 @@
             "produced_per_cycle": 12
         },
         {
-            "name": "Bastic Rations",
+            "name": "Basic Rations",
             "ticker": "RAT",
             "weight": 0.21,
             "volume": 0.1,
