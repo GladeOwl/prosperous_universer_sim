@@ -37,7 +37,7 @@ class Producer:
     def withdraw_resources(self, time: tuple):
         for item in self.current_production.reciepe:
             write_to_log(
-                f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Withdraw Request: {item['item'].name}, {item['amount']} units for {self.current_production.name}"
+                f"[{time[0]}D:{time[1]}H:{time[2]}M] [{self.name}] Withdraw Request: {item['item'].name}, {item['amount']} units --> {self.current_production.name}"
             )
             self.inventory.remove_stock(item["item"], item["amount"], time)
 

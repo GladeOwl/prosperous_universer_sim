@@ -20,9 +20,9 @@ class Inventory:
         self.current_weight += item.weight * amount
         self.current_volume += item.volume * amount
 
-        write_to_log(
-            f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Added: {item.name}, {amount} units"
-        )
+        # write_to_log(
+        #     f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Added: {item.name}, {amount} units"
+        # )
 
     def remove_stock(self, item: Item, amount: int, time: tuple):
         """Removes the requested item from the inventory stock"""
