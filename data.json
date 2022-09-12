@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "name": "Water",
+            "ticker": "H2O",
+            "weight": 0.2,
+            "volume": 0.2,
+            "producer": "Rig",
+            "category": "Liquids",
+            "reciepe": [],
+            "time": 423
+        },
+        {
+            "name": "Triglyceride Nuts",
+            "ticker": "NUT",
+            "weight": 0.9,
+            "volume": 1,
+            "producer": "Farmstead",
+            "category": "Agricultural Products",
+            "reciepe": [
+                {"material": "H2O", "amount": 1}
+            ],
+            "time": 2220
+        },
+        {
+            "name": "High-Carb Grain",
+            "ticker": "GRN",
+            "weight": 0.9,
+            "volume": 1,
+            "producer": "Farmstead",
+            "category": "Agricultural Products",
+            "reciepe": [
+                {"material": "H2O", "amount": 12}
+            ],
+            "time": 1680
+        },
+        {
+            "name": "Protein-Rich Beans",
+            "ticker": "BEA",
+            "weight": 0.8,
+            "volume": 1,
+            "producer": "Farmstead",
+            "category": "Agricultural Products",
+            "reciepe": [
+                {"material": "H2O", "amount": 18}
+            ],
+            "time": 1800
+        },
+        {
+            "name": "Bastic Rations",
+            "ticker": "RAT",
+            "weight": 0.21,
+            "volume": 0.1,
+            "producer": "Food Processor",
+            "category": "Consumables (B)",
+            "reciepe": [
+                {"material": "GRN", "amount": 1},
+                {"material": "NUT", "amount": 1},
+                {"material": "BEA", "amount": 1}
+            ],
+            "time": 424
+        }
+    ]
+}

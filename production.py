@@ -1,8 +1,19 @@
 from item import Item
 from inventory import Inventory
 
-class Production():
-    def __init__(self, item: Item, total_time: int, recurring: bool, inventory: Inventory, items_required: list = None) -> None:
+
+class Producer:
+    pass
+
+
+class Production:
+    def __init__(
+        self,
+        item: Item,
+        total_time: int,
+        inventory: Inventory,
+        items_required: list = None,
+    ) -> None:
         self.item = item
         self.total_time = total_time
         self.current_time = total_time
@@ -20,10 +31,10 @@ class Production():
         """Tick the production by 1"""
 
         self.current_time -= 1
-        
+
         if self.current_time >= 0:
             self.complete_production()
-    
+
     def complete_production(self):
         """Checks if the production cycle is complete"""
 
