@@ -16,3 +16,115 @@ Simluation Setup Completed.
 ------------------
 [7H:3M] [Rig] Production Complete: Water, Produced: 6
 [7H:3M] Added Water: 6 units
+[7H:4M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[7H:4M] Added Basic Rations: 10 units
+[7H:4M] Removed Triglyceride Nuts: 1 units
+[7H:4M] Removed High-Carb Grain: 1 units
+[7H:4M] Removed Protein-Rich Beans: 1 units
+[14H:6M] [Rig] Production Complete: Water, Produced: 6
+[14H:6M] Added Water: 6 units
+[14H:8M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[14H:8M] Added Basic Rations: 10 units
+[14H:8M] Removed Triglyceride Nuts: 1 units
+[14H:8M] Removed High-Carb Grain: 1 units
+[14H:8M] Removed Protein-Rich Beans: 1 units
+[21H:9M] [Rig] Production Complete: Water, Produced: 6
+[21H:9M] Added Water: 6 units
+[21H:12M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[21H:12M] Added Basic Rations: 10 units
+[21H:12M] Removed Triglyceride Nuts: 1 units
+[21H:12M] Removed High-Carb Grain: 1 units
+[21H:12M] Removed Protein-Rich Beans: 1 units
+[28H:12M] [Rig] Production Complete: Water, Produced: 6
+[28H:12M] Added Water: 6 units
+[28H:16M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[28H:16M] Added Basic Rations: 10 units
+[28H:16M] Removed Triglyceride Nuts: 1 units
+[28H:16M] Removed High-Carb Grain: 1 units
+[28H:16M] Removed Protein-Rich Beans: 1 units
+[35H:15M] [Rig] Production Complete: Water, Produced: 6
+[35H:15M] Added Water: 6 units
+[35H:20M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[35H:20M] Added Basic Rations: 10 units
+[35H:20M] Removed Triglyceride Nuts: 1 units
+[35H:20M] Removed High-Carb Grain: 1 units
+[35H:20M] Removed Protein-Rich Beans: 1 units
+[36H:60M] [Farmstead] Production Complete: Triglyceride Nuts, Produced: 12
+[36H:60M] Added Triglyceride Nuts: 12 units
+[36H:60M] Removed Water: 12 units
+[42H:18M] [Rig] Production Complete: Water, Produced: 6
+[42H:18M] Added Water: 6 units
+[42H:24M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[42H:24M] Added Basic Rations: 10 units
+[42H:24M] Removed Triglyceride Nuts: 1 units
+[42H:24M] Removed High-Carb Grain: 1 units
+[42H:24M] Removed Protein-Rich Beans: 1 units
+[49H:21M] [Rig] Production Complete: Water, Produced: 6
+[49H:21M] Added Water: 6 units
+[49H:28M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[49H:28M] Added Basic Rations: 10 units
+[49H:28M] Removed Triglyceride Nuts: 1 units
+[49H:28M] Removed High-Carb Grain: 1 units
+[49H:28M] Removed Protein-Rich Beans: 1 units
+[56H:24M] [Rig] Production Complete: Water, Produced: 6
+[56H:24M] Added Water: 6 units
+[56H:32M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[56H:32M] Added Basic Rations: 10 units
+[56H:32M] Removed Triglyceride Nuts: 1 units
+[56H:32M] Removed High-Carb Grain: 1 units
+[56H:32M] Removed Protein-Rich Beans: 1 units
+[63H:27M] [Rig] Production Complete: Water, Produced: 6
+[63H:27M] Added Water: 6 units
+[63H:36M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[63H:36M] Added Basic Rations: 10 units
+[63H:36M] Removed Triglyceride Nuts: 1 units
+[63H:36M] Removed High-Carb Grain: 1 units
+[63H:36M] Removed Protein-Rich Beans: 1 units
+[64H:60M] [Farmstead] Production Complete: High-Carb Grain, Produced: 12
+[64H:60M] Added High-Carb Grain: 12 units
+[64H:60M] Removed Water: 18 units
+[70H:30M] [Rig] Production Complete: Water, Produced: 6
+[70H:30M] Added Water: 6 units
+[70H:40M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[70H:40M] Added Basic Rations: 10 units
+[70H:40M] Removed Triglyceride Nuts: 1 units
+[70H:40M] Removed High-Carb Grain: 1 units
+[70H:40M] Removed Protein-Rich Beans: 1 units
+[77H:33M] [Rig] Production Complete: Water, Produced: 6
+[77H:33M] Added Water: 6 units
+[77H:44M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[77H:44M] Added Basic Rations: 10 units
+[77H:44M] Removed Triglyceride Nuts: 1 units
+[77H:44M] Removed High-Carb Grain: 1 units
+[77H:44M] Protein-Rich Beans has run out.
+[84H:36M] [Rig] Production Complete: Water, Produced: 6
+[84H:36M] Added Water: 6 units
+[84H:48M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[84H:48M] Added Basic Rations: 10 units
+[84H:48M] Removed Triglyceride Nuts: 1 units
+[84H:48M] Removed High-Carb Grain: 1 units
+[84H:48M] Protein-Rich Beans has run out.
+[91H:39M] [Rig] Production Complete: Water, Produced: 6
+[91H:39M] Added Water: 6 units
+[91H:52M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[91H:52M] Added Basic Rations: 10 units
+[91H:52M] Removed Triglyceride Nuts: 1 units
+[91H:52M] Removed High-Carb Grain: 1 units
+[91H:52M] Protein-Rich Beans has run out.
+[94H:60M] [Farmstead] Production Complete: Protein-Rich Beans, Produced: 12
+[94H:60M] Added Protein-Rich Beans: 12 units
+[94H:60M] Removed Water: 1 units
+[98H:42M] [Rig] Production Complete: Water, Produced: 6
+[98H:42M] Added Water: 6 units
+[98H:56M] [Food Processor] Production Complete: Basic Rations, Produced: 10
+[98H:56M] Added Basic Rations: 10 units
+[98H:56M] Removed Triglyceride Nuts: 1 units
+[98H:56M] Removed High-Carb Grain: 1 units
+[98H:56M] Removed Protein-Rich Beans: 1 units
+|| Inventory Stock ||
+|| Water : 63 ||
+|| Triglyceride Nuts : 8 ||
+|| High-Carb Grain : 8 ||
+|| Protein-Rich Beans : 8 ||
+|| Basic Rations : 150 ||
+------------------

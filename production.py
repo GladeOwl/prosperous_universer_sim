@@ -1,4 +1,3 @@
-from asyncore import write
 import string
 from logger import create_log, write_to_log, add_partition
 from item import Item
@@ -27,12 +26,13 @@ class Producer:
         )
         self.deposit_resources(time)
 
-        if len(self.queue) != 0 and self.current_production_index < len(self.queue):
-            self.current_production_index += 1
-        else:
+        if self.current_production_index + 1 >= len(self.queue):
             self.current_production_index = 0
+        else:
+            self.current_production_index += 1
 
         self.current_production = self.queue[self.current_production_index]
+
         self.current_time = self.current_production.time
         self.withdraw_resources(time)
 
