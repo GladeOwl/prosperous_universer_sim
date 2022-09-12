@@ -8,7 +8,7 @@ from item import Item
 
 
 def simulate_time(producers: list):
-    runtime_in_days = 30
+    runtime_in_days = 10
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
@@ -87,6 +87,8 @@ if __name__ == "__main__":
     inventory = Inventory(max_weight, max_volume)
 
     items, producers = setup_simulation(inventory)
+
+    write_to_log(f"Simulation Start")
     inventory.log_inventory()
 
     for producer in producers:

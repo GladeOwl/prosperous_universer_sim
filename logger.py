@@ -1,4 +1,4 @@
-FILE_NAME = "simulation_logs.txt"
+FILE_NAME = "simulation_logs.md"
 
 
 def create_log():
