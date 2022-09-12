@@ -7,6 +7,7 @@ Log Start
 [0H:0M] Added Basic Rations: 10 units
 Simluation Setup Completed.
 ------------------
+------------------
 || Inventory Stock ||
 || Water : 10 ||
 || Triglyceride Nuts : 10 ||
@@ -14,6 +15,10 @@ Simluation Setup Completed.
 || Protein-Rich Beans : 10 ||
 || Basic Rations : 10 ||
 ------------------
+[0H:0M] Removed Water: 1 units
+[0H:0M] Removed Triglyceride Nuts: 1 units
+[0H:0M] Removed High-Carb Grain: 1 units
+[0H:0M] Removed Protein-Rich Beans: 1 units
 [7H:3M] [Rig] Production Complete: Water, Produced: 6
 [7H:3M] Added Water: 6 units
 [7H:4M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -89,7 +94,7 @@ Simluation Setup Completed.
 [70H:40M] Added Basic Rations: 10 units
 [70H:40M] Removed Triglyceride Nuts: 1 units
 [70H:40M] Removed High-Carb Grain: 1 units
-[70H:40M] Removed Protein-Rich Beans: 1 units
+[70H:40M] Protein-Rich Beans has run out.
 [77H:33M] [Rig] Production Complete: Water, Produced: 6
 [77H:33M] Added Water: 6 units
 [77H:44M] [Food Processor] Production Complete: Basic Rations, Produced: 10
@@ -121,10 +126,11 @@ Simluation Setup Completed.
 [98H:56M] Removed Triglyceride Nuts: 1 units
 [98H:56M] Removed High-Carb Grain: 1 units
 [98H:56M] Removed Protein-Rich Beans: 1 units
+------------------
 || Inventory Stock ||
-|| Water : 63 ||
-|| Triglyceride Nuts : 8 ||
-|| High-Carb Grain : 8 ||
-|| Protein-Rich Beans : 8 ||
+|| Water : 62 ||
+|| Triglyceride Nuts : 7 ||
+|| High-Carb Grain : 7 ||
+|| Protein-Rich Beans : 7 ||
 || Basic Rations : 150 ||
 ------------------

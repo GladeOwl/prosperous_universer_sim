@@ -43,6 +43,7 @@ class Inventory:
         write_to_log(f"[{time[0]}H:{time[1]}M] Removed {item.name}: {amount} units")
 
     def log_inventory(self):
+        add_partition()
         write_to_log("|| Inventory Stock ||")
         for item in self.stock:
             amount = self.stock[item]["amount"]

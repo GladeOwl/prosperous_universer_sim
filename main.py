@@ -1,4 +1,5 @@
 import json
+from math import prod
 from logger import create_log, write_to_log, add_partition
 from inventory import Inventory
 from production import Producer
@@ -82,5 +83,9 @@ if __name__ == "__main__":
 
     items, producers = setup_simulation(inventory)
     inventory.log_inventory()
+
+    for producer in producers:
+        producer.withdraw_resources((0, 0))
+
     simulate_time(producers)
     inventory.log_inventory()

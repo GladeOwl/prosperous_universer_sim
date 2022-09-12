@@ -13,8 +13,6 @@ class Producer:
         self.current_production: Item = self.queue[self.current_production_index]
         self.current_time: int = self.current_production.time
 
-        self.withdraw_resources((0, 0))
-
     def tick(self, time: tuple):
         self.current_time -= 1
         if self.current_time <= 0:
