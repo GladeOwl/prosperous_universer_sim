@@ -1,3 +1,5 @@
+import string
+
 FILE_NAME = "simulation_logs.md"
 
 
@@ -6,10 +8,9 @@ def create_log():
         txtf.write("Log Start")
 
 
-def write_to_log(text):
+def write_to_log(time: tuple, entity: string, text: string):
     with open(FILE_NAME, "a") as txtf:
-        txtf.write("\n")
-        txtf.write(text)
+        txtf.write(f"\n[{time[0]}D:{time[1]}H:{time[2]}M] [{entity}] {text}")
 
 
 def add_partition():
