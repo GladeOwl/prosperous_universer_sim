@@ -50,7 +50,6 @@ class Inventory:
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
 
-        print("do be doing something")
         write_to_log(
             time,
             "INV",

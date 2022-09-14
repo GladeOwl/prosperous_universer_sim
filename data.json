@@ -2,7 +2,14 @@
     "producers":[
         {
             "name": "RIG",
-            "queue_slots": 1,
+            "queue_slots": 2,
+            "workforce":{
+                "pioneers": 30,
+                "settlers": 0,
+                "technicians": 0,
+                "engineers": 0,
+                "scientists": 0
+            },
             "items": [
                 {
                     "name": "Water",
@@ -20,7 +27,14 @@
         },
         {
             "name": "FRM",
-            "queue_slots": 2,
+            "queue_slots": 1,
+            "workforce":{
+                "pioneers": 50,
+                "settlers": 0,
+                "technicians": 0,
+                "engineers": 0,
+                "scientists": 0
+            },
             "items": [
                 {
                     "name": "Triglyceride Nuts",
@@ -63,6 +77,13 @@
         {
             "name": "FP",
             "queue_slots": 1,
+            "workforce":{
+                "pioneers": 40,
+                "settlers": 0,
+                "technicians": 0,
+                "engineers": 0,
+                "scientists": 0
+            },
             "items": [
                 {
                     "name": "Basic Rations",
@@ -74,7 +95,19 @@
                     "reciepe": {"GRN": 1,"NUT": 1,"BEA": 1},
                     "time": 424,
                     "produced_per_cycle": 10,
-                    "starting_stock": 10
+                    "starting_stock": 0
+                },
+                {
+                    "name": "Drinking Water",
+                    "ticker": "DW",
+                    "weight": 0.1,
+                    "volume": 0.1,
+                    "producer": "FP",
+                    "category": "Consumables (B)",
+                    "reciepe": {"H2O": 10},
+                    "time": 170,
+                    "produced_per_cycle": 6,
+                    "starting_stock": 0
                 }
             ]
         }

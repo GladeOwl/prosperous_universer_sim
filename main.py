@@ -7,7 +7,7 @@ from item import Item
 
 
 def simulate_time(producers: list):
-    runtime_in_days = 7
+    runtime_in_days = 60
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
@@ -31,8 +31,9 @@ def simulate_time(producers: list):
         if current_day != days:
             current_day = days
             add_partition()
-            write_text_to_log(f"Day {current_day}")
             inventory.log_inventory()
+            write_text_to_log(f"Day {current_day}")
+            add_partition()
 
     print(f"Done in {days}D:{hours}H:{minutes}M ({runtime} minutes).")
 
