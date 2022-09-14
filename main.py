@@ -4,6 +4,7 @@ from logger import create_log, write_to_log, add_partition, write_text_to_log
 from inventory import Inventory
 from production import Producer
 from item import Item
+from base import Base
 
 
 def simulate_time(producers: list):
@@ -89,6 +90,8 @@ def setup_simulation(inventory: Inventory):
     write_text_to_log(f"Simulation Start")
     inventory.log_inventory()
 
+    base = Base("Harmonia")
+    base.get_base_pop(producers)
     for producer in producers:
         producer.initial_production((0, 0, 0))
 
