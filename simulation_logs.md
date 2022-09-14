@@ -1,5 +1,8 @@
 Log Start
 ------------------
+Setting up production for Water
+Setting up production for Triglyceride Nuts
+Setting up production for Basic Rations
 [0D:0H:0M] [None] Simluation Setup Completed.
 ------------------
 Simulation Start

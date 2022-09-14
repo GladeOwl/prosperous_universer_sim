@@ -84,6 +84,11 @@ def setup_simulation(inventory: Inventory):
     write_to_log((0, 0, 0), None, "Simluation Setup Completed.")
     add_partition()
 
+    for producer in producers:
+        print(producer.name)
+        for item in producer.queue:
+            print(item.name)
+
     return items, producers
 
 

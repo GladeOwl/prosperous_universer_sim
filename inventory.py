@@ -50,10 +50,11 @@ class Inventory:
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
 
+        print("do be doing something")
         write_to_log(
             time,
             "INV",
-            f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Removed: {item.name}, {amount} units",
+            f"Removed: {item.name}, {amount} units",
         )
 
     def log_inventory(self):
