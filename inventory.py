@@ -1,3 +1,4 @@
+import math
 from item import Item
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
@@ -16,7 +17,7 @@ class Inventory:
         if item.name not in self.stock:
             self.stock[item.name] = {"info": item, "amount": 0}
 
-        self.stock[item.name]["amount"] += amount
+        self.stock[item.name]["amount"] += int(amount)
         self.current_weight += item.weight * amount
         self.current_volume += item.volume * amount
 
@@ -27,7 +28,7 @@ class Inventory:
                 f"Max Weight Limit Exceeded. {self.current_weight}/{self.max_weight}",
             )
             self.log_inventory()
-            raise Exception("Error! Check Logs")
+            raise AttributeError("Max Weight Limit Exceeded.")
 
         if self.current_volume > self.max_volume:
             write_to_log(
@@ -36,7 +37,7 @@ class Inventory:
                 f"Max Volume Limit Exceeded. {self.current_volume}/{self.max_volume}",
             )
             self.log_inventory()
-            raise Exception("Error! Check Logs")
+            raise AttributeError("Max Volume Limit Exceeded.")
 
         # write_to_log(
         #     f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Added: {item.name}, {amount} units"
@@ -63,7 +64,7 @@ class Inventory:
                 f"{item.name} has run out.",
             )
             self.log_inventory()
-            raise Exception("Error! Check Logs")
+            raise AttributeError(f"{item.name} has run out.")
 
         self.current_weight -= item.weight * amount
         self.current_volume -= item.volume * amount
@@ -81,4 +82,7 @@ class Inventory:
             write_text_to_log(
                 f"|| {item} [{self.stock[item]['info'].ticker}]: {self.stock[item]['amount']} ||"
             )
+        write_text_to_log(
+            f"|| Weight: {round(self.current_weight, 2)}/{self.max_weight} | Volume: {round(self.current_volume, 2)}/{self.max_volume} ||"
+        )
         add_partition()

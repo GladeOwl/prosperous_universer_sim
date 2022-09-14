@@ -21,7 +21,7 @@ class Production:
         write_to_log(
             time,
             self.item.producer,
-            f"_Production Finished_: {self.item.name} [{self.item.ticker}], {self.item.produced_per_cycle} units",
+            f"Production Finished: {self.item.name} [{self.item.ticker}], {self.item.produced_per_cycle} units",
         )
         self.time_left = self.time
         self.deposit_resources(time)

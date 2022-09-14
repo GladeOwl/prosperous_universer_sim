@@ -8,7 +8,7 @@ from base import Base
 
 
 def simulate_time(base: Base, producers: list):
-    runtime_in_days = 10
+    runtime_in_days = 365
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
