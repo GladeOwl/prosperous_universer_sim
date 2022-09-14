@@ -49,13 +49,19 @@ class Production:
 
 class Producer:
     def __init__(
-        self, name: string, queue: list, queue_slots: int, inventory: Inventory
+        self,
+        name: string,
+        queue: list,
+        queue_slots: int,
+        inventory: Inventory,
+        workforce: dict,
     ) -> None:
         self.name: string = name
         self.queue: list = queue
         self.queue_slots = queue_slots
         self.inventory: Inventory = inventory
         self.current_production = []
+        self.workforce = workforce
 
     def tick(self, time: tuple):
         """Ticks the production by 1"""

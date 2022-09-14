@@ -57,6 +57,7 @@ def setup_simulation(inventory: Inventory):
                 queue=[],
                 queue_slots=producer["queue_slots"],
                 inventory=inventory,
+                workforce=producer["workforce"],
             )
 
             producer_log = f"{new_producer.name}: "
@@ -90,11 +91,13 @@ def setup_simulation(inventory: Inventory):
     write_text_to_log(f"Simulation Start")
     inventory.log_inventory()
 
-    base = Base("Harmonia")
-    base.get_base_pop(producers)
+    base = Base("Harmonia", inventory)
+
     for producer in producers:
         producer.initial_production((0, 0, 0))
+        base.add_base_pop(producer.workforce)
 
+    print(base.get_total_pop())
     return items, producers
 
 
