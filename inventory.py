@@ -1,5 +1,5 @@
 from item import Item
-from logger import create_log, write_to_log, add_partition
+from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
 class Inventory:
@@ -29,7 +29,9 @@ class Inventory:
 
         if item.name not in self.stock:
             write_to_log(
-                f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] {item.name} doesn't exist in the inventory."
+                time,
+                "INV",
+                f"{item.name} doesn't exist in the inventory.",
             )
             self.log_inventory()
             raise Exception("Error! Check Logs")
@@ -38,7 +40,9 @@ class Inventory:
 
         if self.stock[item.name]["amount"] < 0:
             write_to_log(
-                f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] {item.name} has run out."
+                time,
+                "INV",
+                f"{item.name} has run out.",
             )
             self.log_inventory()
             raise Exception("Error! Check Logs")
@@ -47,13 +51,15 @@ class Inventory:
         self.current_volume -= item.volume * amount
 
         write_to_log(
-            f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Removed: {item.name}, {amount} units"
+            time,
+            "INV",
+            f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Removed: {item.name}, {amount} units",
         )
 
     def log_inventory(self):
         add_partition()
-        write_to_log("|| Inventory Stock ||")
+        write_text_to_log(f"|| Inventory Stock ||")
         for item in self.stock:
             amount = self.stock[item]["amount"]
-            write_to_log(f"|| {item} : {amount} ||")
+            write_text_to_log(f"|| {item} : {amount} ||")
         add_partition()

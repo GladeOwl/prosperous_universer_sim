@@ -13,6 +13,11 @@ def write_to_log(time: tuple, entity: string, text: string):
         txtf.write(f"\n[{time[0]}D:{time[1]}H:{time[2]}M] [{entity}] {text}")
 
 
+def write_text_to_log(text: string):
+    with open(FILE_NAME, "a") as txtf:
+        txtf.write(f"\n{text}")
+
+
 def add_partition():
     with open(FILE_NAME, "a") as txtf:
         txtf.write("\n")
