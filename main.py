@@ -49,7 +49,6 @@ def setup_simulation(inventory: Inventory):
     producers = []
     with open("./data.json", encoding="utf-8") as jsonf:
         data = json.load(jsonf)
-
         for producer in data["producers"]:
             new_producer = Producer(
                 name=producer["name"],
@@ -57,6 +56,8 @@ def setup_simulation(inventory: Inventory):
                 queue_slots=producer["queue_slots"],
                 inventory=inventory,
             )
+
+            producer_log = f"{new_producer.name}: "
 
             for item in producer["items"]:
                 new_item = Item(
@@ -74,20 +75,21 @@ def setup_simulation(inventory: Inventory):
                 items.append(new_item)
                 new_producer.queue.append(new_item)
                 inventory.add_stock(new_item, item["starting_stock"], (0, 0, 0))
+                producer_log += f"| {new_item.name} [{new_item.ticker}]|"
 
-            new_producer.initial_production()
+            write_text_to_log(producer_log)
             producers.append(new_producer)
 
     for item in items:
         item.setup_reciepe(items)
 
-    write_to_log((0, 0, 0), None, "Simluation Setup Completed.")
+    write_text_to_log("Simluation Setup Completed.")
     add_partition()
+    write_text_to_log(f"Simulation Start")
+    inventory.log_inventory()
 
     for producer in producers:
-        print(producer.name)
-        for item in producer.queue:
-            print(item.name)
+        producer.initial_production((0, 0, 0))
 
     return items, producers
 
@@ -98,8 +100,5 @@ if __name__ == "__main__":
     inventory = Inventory(max_weight, max_volume)
 
     items, producers = setup_simulation(inventory)
-
-    write_text_to_log(f"Simulation Start")
-    inventory.log_inventory()
 
     simulate_time(producers)

@@ -14,13 +14,13 @@
                     "reciepe": {},
                     "time": 423,
                     "produced_per_cycle": 6,
-                    "starting_stock": 10
+                    "starting_stock": 30
                 }
             ]
         },
         {
             "name": "FRM",
-            "queue_slots": 1,
+            "queue_slots": 2,
             "items": [
                 {
                     "name": "Triglyceride Nuts",

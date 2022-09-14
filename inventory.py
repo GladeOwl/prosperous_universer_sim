@@ -54,13 +54,14 @@ class Inventory:
         write_to_log(
             time,
             "INV",
-            f"Removed: {item.name}, {amount} units",
+            f"Removed: {item.name} [{item.ticker}], {amount} units",
         )
 
     def log_inventory(self):
         add_partition()
         write_text_to_log(f"|| Inventory Stock ||")
         for item in self.stock:
-            amount = self.stock[item]["amount"]
-            write_text_to_log(f"|| {item} : {amount} ||")
+            write_text_to_log(
+                f"|| {item} [{self.stock[item]['info'].ticker}]: {self.stock[item]['amount']} ||"
+            )
         add_partition()

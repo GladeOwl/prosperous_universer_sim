@@ -21,20 +21,27 @@ class Production:
         write_to_log(
             time,
             self.item.producer,
-            f"Produced: {self.item.name}, {self.item.produced_per_cycle} units",
+            f"Production Finished: {self.item.name} [{self.item.ticker}], {self.item.produced_per_cycle} units",
         )
         self.time_left = self.time
         self.deposit_resources(time)
-        self.producer.next_production(self)
+        self.producer.next_production(self, time)
 
     def withdraw_resources(self, time: tuple):
         for item in self.item.reciepe:
+            ticker = item["item"].ticker.strip("'")
+
             write_to_log(
                 time,
                 self.item.producer,
-                f"Withdraw Request: {item['item'].name}, {item['amount']} units --> {self.current_production.name}",
+                f"Withdraw Request: {item['item'].name} [{ticker}], {item['amount']} units --> {self.item.name} [{self.item.ticker}]",
             )
-            self.inventory.remove_stock(item["item"], item["amount"])
+            self.inventory.remove_stock(item["item"], item["amount"], time)
+        write_to_log(
+            time,
+            self.item.producer,
+            f"_Production Started_: {self.item.name} [{self.item.ticker}], {self.item.produced_per_cycle} units",
+        )
 
     def deposit_resources(self, time: tuple):
         self.inventory.add_stock(self.item, self.item.produced_per_cycle, time)
@@ -55,20 +62,20 @@ class Producer:
         for production in self.current_production:
             production.tick(time)
 
-    def initial_production(self):
+    def initial_production(self, time: tuple):
         """Sets up the initial production queue for the Producer"""
         index = 0
         while index < self.queue_slots - len(self.current_production):
-            self.setup_production()
+            self.setup_production(time)
 
-    def next_production(self, production: Production):
+    def next_production(self, production: Production, time: tuple):
         """Sets up the next production in the queue"""
         self.current_production.remove(production)
-        self.setup_production()
+        self.setup_production(time)
 
-    def setup_production(self):
+    def setup_production(self, time):
         item = self.queue.pop(0)
         production = Production(item, self, self.inventory)
+        production.withdraw_resources(time)
         self.current_production.append(production)
         self.queue.append(item)
-        write_text_to_log(f"Setting up production for {item.name}")
