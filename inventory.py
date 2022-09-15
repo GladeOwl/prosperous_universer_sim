@@ -1,4 +1,5 @@
 import math
+from daily import Daily
 from item import Item
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
@@ -10,6 +11,7 @@ class Inventory:
         self.current_weight: float = 0
         self.current_volume: float = 0
         self.stock: dict = {}
+        self.stock_history: list = {}
 
     def add_stock(self, item: Item, amount: int, time: tuple):
         """Adds the requested stock to the inventory stock"""
@@ -86,3 +88,9 @@ class Inventory:
             f"|| Weight: {self.current_weight}/{self.max_weight} | Volume: {self.current_volume}/{self.max_volume} ||"
         )
         add_partition()
+
+    def log_daily_stock(self):
+        for item in self.stock:
+            if item not in self.stock_history:
+                self.stock_history[item] = []
+            self.stock_history[item].append(round(self.stock[item]["amount"], 2))
