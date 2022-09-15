@@ -35,5 +35,5 @@ class Base:
             for item in self.consumables:
                 if need == item.ticker:
                     self.inventory.remove_stock(
-                        item, self.needs["pioneers"][need], time
+                        item, self.needs["pioneers"][need] * self.pioneers, time
                     )

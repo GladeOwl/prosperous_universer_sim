@@ -28,7 +28,7 @@
         },
         {
             "name": "FRM",
-            "queue_slots": 2,
+            "queue_slots": 1,
             "workforce":{
                 "pioneers": 50,
                 "settlers": 0,
@@ -48,7 +48,7 @@
                     "time": 2160,
                     "produced_per_cycle": 12,
                     "starting_stock": 20,
-                    "orders": 2
+                    "orders": 1
                 },
                 {
                     "name": "High-Carb Grain",
@@ -98,9 +98,9 @@
                     "category": "Consumables (B)",
                     "reciepe": {"GRN": 1,"NUT": 1,"BEA": 1},
                     "time": 424,
-                    "produced_per_cycle": 10,
+                    "produced_per_cycle": 20,
                     "starting_stock": 0,
-                    "orders": 1
+                    "orders": 2
                 },
                 {
                     "name": "Drinking Water",
@@ -112,7 +112,7 @@
                     "reciepe": {"H2O": 10},
                     "time": 170,
                     "produced_per_cycle": 6,
-                    "starting_stock": 0,
+                    "starting_stock": 20,
                     "orders": 1
                 }
             ]
