@@ -80,7 +80,7 @@ Simulation Start
 || Protein-Rich Beans [BEA]: 7 ||
 || Basic Rations [RAT]: 15.2 ||
 || Drinking Water [DW]: 7.2 ||
-|| Weight: 31.112000000000016/1500 | Volume: 32.24000000000002/1500 ||
+|| Weight: 31.11/1500 | Volume: 32.24/1500 ||
 ------------------
 Day 1
 ------------------
@@ -137,9 +137,9 @@ Day 1
 || Triglyceride Nuts [NUT]: 17 ||
 || High-Carb Grain [GRN]: 5 ||
 || Protein-Rich Beans [BEA]: 5 ||
-|| Basic Rations [RAT]: 40.400000000000006 ||
-|| Drinking Water [DW]: 14.399999999999999 ||
-|| Weight: 41.52400000000005/1500 | Volume: 40.28000000000005/1500 ||
+|| Basic Rations [RAT]: 40.4 ||
+|| Drinking Water [DW]: 14.4 ||
+|| Weight: 41.52/1500 | Volume: 40.28/1500 ||
 ------------------
 Day 2
 ------------------
@@ -204,9 +204,9 @@ Day 2
 || Triglyceride Nuts [NUT]: 14 ||
 || High-Carb Grain [GRN]: 14 ||
 || Protein-Rich Beans [BEA]: 2 ||
-|| Basic Rations [RAT]: 55.60000000000001 ||
-|| Drinking Water [DW]: 27.599999999999998 ||
-|| Weight: 51.036000000000094/1500 | Volume: 48.12000000000008/1500 ||
+|| Basic Rations [RAT]: 55.6 ||
+|| Drinking Water [DW]: 27.6 ||
+|| Weight: 51.04/1500 | Volume: 48.12/1500 ||
 ------------------
 Day 3
 ------------------
@@ -259,9 +259,9 @@ Day 3
 || Triglyceride Nuts [NUT]: 12 ||
 || High-Carb Grain [GRN]: 12 ||
 || Protein-Rich Beans [BEA]: 12 ||
-|| Basic Rations [RAT]: 70.80000000000001 ||
+|| Basic Rations [RAT]: 70.8 ||
 || Drinking Water [DW]: 34.8 ||
-|| Weight: 62.34800000000013/1500 | Volume: 59.360000000000106/1500 ||
+|| Weight: 62.35/1500 | Volume: 59.36/1500 ||
 ------------------
 Day 4
 ------------------
@@ -326,9 +326,9 @@ Day 4
 || Triglyceride Nuts [NUT]: 9 ||
 || High-Carb Grain [GRN]: 9 ||
 || Protein-Rich Beans [BEA]: 9 ||
-|| Basic Rations [RAT]: 96.00000000000001 ||
+|| Basic Rations [RAT]: 96.0 ||
 || Drinking Water [DW]: 48.0 ||
-|| Weight: 64.76000000000009/1500 | Volume: 57.80000000000014/1500 ||
+|| Weight: 64.76/1500 | Volume: 57.8/1500 ||
 ------------------
 Day 5
 ------------------
@@ -381,9 +381,9 @@ Day 5
 || Triglyceride Nuts [NUT]: 19 ||
 || High-Carb Grain [GRN]: 7 ||
 || Protein-Rich Beans [BEA]: 7 ||
-|| Basic Rations [RAT]: 111.20000000000002 ||
+|| Basic Rations [RAT]: 111.2 ||
 || Drinking Water [DW]: 55.2 ||
-|| Weight: 75.07200000000006/1500 | Volume: 66.84000000000015/1500 ||
+|| Weight: 75.07/1500 | Volume: 66.84/1500 ||
 ------------------
 Day 6
 ------------------
@@ -441,8 +441,8 @@ Day 6
 || High-Carb Grain [GRN]: 17 ||
 || Protein-Rich Beans [BEA]: 5 ||
 || Basic Rations [RAT]: 136.4 ||
-|| Drinking Water [DW]: 62.400000000000006 ||
-|| Weight: 84.28400000000003/1500 | Volume: 73.68000000000015/1500 ||
+|| Drinking Water [DW]: 62.4 ||
+|| Weight: 84.28/1500 | Volume: 73.68/1500 ||
 ------------------
 Day 7
 ------------------
@@ -508,8 +508,8 @@ Day 7
 || High-Carb Grain [GRN]: 14 ||
 || Protein-Rich Beans [BEA]: 14 ||
 || Basic Rations [RAT]: 151.6 ||
-|| Drinking Water [DW]: 75.60000000000001 ||
-|| Weight: 95.996/1500 | Volume: 84.92000000000014/1500 ||
+|| Drinking Water [DW]: 75.6 ||
+|| Weight: 96.0/1500 | Volume: 84.92/1500 ||
 ------------------
 Day 8
 ------------------
@@ -562,9 +562,9 @@ Day 8
 || Triglyceride Nuts [NUT]: 12 ||
 || High-Carb Grain [GRN]: 12 ||
 || Protein-Rich Beans [BEA]: 12 ||
-|| Basic Rations [RAT]: 176.79999999999998 ||
-|| Drinking Water [DW]: 82.80000000000001 ||
-|| Weight: 98.00799999999997/1500 | Volume: 83.36000000000014/1500 ||
+|| Basic Rations [RAT]: 176.8 ||
+|| Drinking Water [DW]: 82.8 ||
+|| Weight: 98.01/1500 | Volume: 83.36/1500 ||
 ------------------
 Day 9
 ------------------
@@ -629,9 +629,9 @@ Day 9
 || Triglyceride Nuts [NUT]: 21 ||
 || High-Carb Grain [GRN]: 9 ||
 || Protein-Rich Beans [BEA]: 9 ||
-|| Basic Rations [RAT]: 191.99999999999997 ||
-|| Drinking Water [DW]: 96.00000000000001 ||
-|| Weight: 108.71999999999993/1500 | Volume: 92.40000000000013/1500 ||
+|| Basic Rations [RAT]: 192.0 ||
+|| Drinking Water [DW]: 96.0 ||
+|| Weight: 108.72/1500 | Volume: 92.4/1500 ||
 ------------------
 Day 10
 ------------------
@@ -684,9 +684,9 @@ Day 10
 || Triglyceride Nuts [NUT]: 19 ||
 || High-Carb Grain [GRN]: 19 ||
 || Protein-Rich Beans [BEA]: 7 ||
-|| Basic Rations [RAT]: 207.19999999999996 ||
-|| Drinking Water [DW]: 103.20000000000002 ||
-|| Weight: 117.83199999999991/1500 | Volume: 100.24000000000014/1500 ||
+|| Basic Rations [RAT]: 207.2 ||
+|| Drinking Water [DW]: 103.2 ||
+|| Weight: 117.83/1500 | Volume: 100.24/1500 ||
 ------------------
 Day 11
 ------------------
@@ -751,9 +751,9 @@ Day 11
 || Triglyceride Nuts [NUT]: 16 ||
 || High-Carb Grain [GRN]: 16 ||
 || Protein-Rich Beans [BEA]: 16 ||
-|| Basic Rations [RAT]: 232.39999999999995 ||
-|| Drinking Water [DW]: 116.40000000000002 ||
-|| Weight: 127.24399999999986/1500 | Volume: 108.08000000000013/1500 ||
+|| Basic Rations [RAT]: 232.4 ||
+|| Drinking Water [DW]: 116.4 ||
+|| Weight: 127.24/1500 | Volume: 108.08/1500 ||
 ------------------
 Day 12
 ------------------
@@ -806,9 +806,9 @@ Day 12
 || Triglyceride Nuts [NUT]: 14 ||
 || High-Carb Grain [GRN]: 14 ||
 || Protein-Rich Beans [BEA]: 14 ||
-|| Basic Rations [RAT]: 247.59999999999994 ||
-|| Drinking Water [DW]: 123.60000000000004 ||
-|| Weight: 131.5559999999997/1500 | Volume: 109.92000000000013/1500 ||
+|| Basic Rations [RAT]: 247.6 ||
+|| Drinking Water [DW]: 123.6 ||
+|| Weight: 131.56/1500 | Volume: 109.92/1500 ||
 ------------------
 Day 13
 ------------------
@@ -865,9 +865,9 @@ Day 13
 || Triglyceride Nuts [NUT]: 24 ||
 || High-Carb Grain [GRN]: 12 ||
 || Protein-Rich Beans [BEA]: 12 ||
-|| Basic Rations [RAT]: 272.7999999999999 ||
+|| Basic Rations [RAT]: 272.8 ||
 || Drinking Water [DW]: 130.8 ||
-|| Weight: 141.96799999999956/1500 | Volume: 117.96000000000012/1500 ||
+|| Weight: 141.97/1500 | Volume: 117.96/1500 ||
 ------------------
 Day 14
 ------------------
@@ -932,9 +932,9 @@ Day 14
 || Triglyceride Nuts [NUT]: 21 ||
 || High-Carb Grain [GRN]: 21 ||
 || Protein-Rich Beans [BEA]: 9 ||
-|| Basic Rations [RAT]: 287.9999999999999 ||
+|| Basic Rations [RAT]: 288.0 ||
 || Drinking Water [DW]: 144.0 ||
-|| Weight: 151.4799999999994/1500 | Volume: 125.80000000000013/1500 ||
+|| Weight: 151.48/1500 | Volume: 125.8/1500 ||
 ------------------
 Day 15
 ------------------
@@ -991,9 +991,9 @@ Day 15
 || Triglyceride Nuts [NUT]: 19 ||
 || High-Carb Grain [GRN]: 19 ||
 || Protein-Rich Beans [BEA]: 19 ||
-|| Basic Rations [RAT]: 313.1999999999999 ||
+|| Basic Rations [RAT]: 313.2 ||
 || Drinking Water [DW]: 151.2 ||
-|| Weight: 162.89199999999926/1500 | Volume: 136.04000000000013/1500 ||
+|| Weight: 162.89/1500 | Volume: 136.04/1500 ||
 ------------------
 Day 16
 ------------------
@@ -1050,9 +1050,9 @@ Day 16
 || Triglyceride Nuts [NUT]: 16 ||
 || High-Carb Grain [GRN]: 16 ||
 || Protein-Rich Beans [BEA]: 16 ||
-|| Basic Rations [RAT]: 328.39999999999986 ||
-|| Drinking Water [DW]: 164.39999999999998 ||
-|| Weight: 162.8039999999991/1500 | Volume: 133.08000000000007/1500 ||
+|| Basic Rations [RAT]: 328.4 ||
+|| Drinking Water [DW]: 164.4 ||
+|| Weight: 162.8/1500 | Volume: 133.08/1500 ||
 ------------------
 Day 17
 ------------------
@@ -1109,9 +1109,9 @@ Day 17
 || Triglyceride Nuts [NUT]: 26 ||
 || High-Carb Grain [GRN]: 14 ||
 || Protein-Rich Beans [BEA]: 14 ||
-|| Basic Rations [RAT]: 343.59999999999985 ||
-|| Drinking Water [DW]: 171.59999999999997 ||
-|| Weight: 175.51599999999894/1500 | Volume: 144.51999999999998/1500 ||
+|| Basic Rations [RAT]: 343.6 ||
+|| Drinking Water [DW]: 171.6 ||
+|| Weight: 175.52/1500 | Volume: 144.52/1500 ||
 ------------------
 Day 18
 ------------------
@@ -1176,9 +1176,9 @@ Day 18
 || Triglyceride Nuts [NUT]: 23 ||
 || High-Carb Grain [GRN]: 23 ||
 || Protein-Rich Beans [BEA]: 11 ||
-|| Basic Rations [RAT]: 368.79999999999984 ||
-|| Drinking Water [DW]: 184.79999999999995 ||
-|| Weight: 182.7279999999988/1500 | Volume: 148.95999999999992/1500 ||
+|| Basic Rations [RAT]: 368.8 ||
+|| Drinking Water [DW]: 184.8 ||
+|| Weight: 182.73/1500 | Volume: 148.96/1500 ||
 ------------------
 Day 19
 ------------------
@@ -1235,9 +1235,9 @@ Day 19
 || Triglyceride Nuts [NUT]: 21 ||
 || High-Carb Grain [GRN]: 21 ||
 || Protein-Rich Beans [BEA]: 21 ||
-|| Basic Rations [RAT]: 383.99999999999983 ||
-|| Drinking Water [DW]: 191.99999999999994 ||
-|| Weight: 196.43999999999863/1500 | Volume: 162.59999999999985/1500 ||
+|| Basic Rations [RAT]: 384.0 ||
+|| Drinking Water [DW]: 192.0 ||
+|| Weight: 196.44/1500 | Volume: 162.6/1500 ||
 ------------------
 Day 20
 ------------------
@@ -1290,9 +1290,9 @@ Day 20
 || Triglyceride Nuts [NUT]: 19 ||
 || High-Carb Grain [GRN]: 19 ||
 || Protein-Rich Beans [BEA]: 19 ||
-|| Basic Rations [RAT]: 409.1999999999998 ||
-|| Drinking Water [DW]: 199.19999999999993 ||
-|| Weight: 198.4519999999985/1500 | Volume: 161.0399999999998/1500 ||
+|| Basic Rations [RAT]: 409.2 ||
+|| Drinking Water [DW]: 199.2 ||
+|| Weight: 198.45/1500 | Volume: 161.04/1500 ||
 ------------------
 Day 21
 ------------------
@@ -1353,9 +1353,9 @@ Day 21
 || Triglyceride Nuts [NUT]: 28 ||
 || High-Carb Grain [GRN]: 16 ||
 || Protein-Rich Beans [BEA]: 16 ||
-|| Basic Rations [RAT]: 424.3999999999998 ||
-|| Drinking Water [DW]: 212.39999999999992 ||
-|| Weight: 206.76399999999833/1500 | Volume: 167.67999999999972/1500 ||
+|| Basic Rations [RAT]: 424.4 ||
+|| Drinking Water [DW]: 212.4 ||
+|| Weight: 206.76/1500 | Volume: 167.68/1500 ||
 ------------------
 Day 22
 ------------------
@@ -1416,9 +1416,9 @@ Day 22
 || Triglyceride Nuts [NUT]: 26 ||
 || High-Carb Grain [GRN]: 26 ||
 || Protein-Rich Beans [BEA]: 14 ||
-|| Basic Rations [RAT]: 449.5999999999998 ||
-|| Drinking Water [DW]: 219.5999999999999 ||
-|| Weight: 218.37599999999819/1500 | Volume: 176.91999999999965/1500 ||
+|| Basic Rations [RAT]: 449.6 ||
+|| Drinking Water [DW]: 219.6 ||
+|| Weight: 218.38/1500 | Volume: 176.92/1500 ||
 ------------------
 Day 23
 ------------------
@@ -1479,9 +1479,9 @@ Day 23
 || Triglyceride Nuts [NUT]: 23 ||
 || High-Carb Grain [GRN]: 23 ||
 || Protein-Rich Beans [BEA]: 23 ||
-|| Basic Rations [RAT]: 464.7999999999998 ||
-|| Drinking Water [DW]: 232.7999999999999 ||
-|| Weight: 227.68799999999803/1500 | Volume: 185.7599999999996/1500 ||
+|| Basic Rations [RAT]: 464.8 ||
+|| Drinking Water [DW]: 232.8 ||
+|| Weight: 227.69/1500 | Volume: 185.76/1500 ||
 ------------------
 Day 24
 ------------------
@@ -1534,9 +1534,9 @@ Day 24
 || Triglyceride Nuts [NUT]: 21 ||
 || High-Carb Grain [GRN]: 21 ||
 || Protein-Rich Beans [BEA]: 21 ||
-|| Basic Rations [RAT]: 479.9999999999998 ||
-|| Drinking Water [DW]: 239.9999999999999 ||
-|| Weight: 231.99999999999787/1500 | Volume: 187.5999999999995/1500 ||
+|| Basic Rations [RAT]: 480.0 ||
+|| Drinking Water [DW]: 240.0 ||
+|| Weight: 232.0/1500 | Volume: 187.6/1500 ||
 ------------------
 Day 25
 ------------------
@@ -1601,9 +1601,9 @@ Day 25
 || Triglyceride Nuts [NUT]: 30 ||
 || High-Carb Grain [GRN]: 18 ||
 || Protein-Rich Beans [BEA]: 18 ||
-|| Basic Rations [RAT]: 505.19999999999976 ||
-|| Drinking Water [DW]: 253.19999999999987 ||
-|| Weight: 240.4119999999977/1500 | Volume: 193.23999999999944/1500 ||
+|| Basic Rations [RAT]: 505.2 ||
+|| Drinking Water [DW]: 253.2 ||
+|| Weight: 240.41/1500 | Volume: 193.24/1500 ||
 ------------------
 Day 26
 ------------------
@@ -1656,9 +1656,9 @@ Day 26
 || Triglyceride Nuts [NUT]: 28 ||
 || High-Carb Grain [GRN]: 28 ||
 || Protein-Rich Beans [BEA]: 16 ||
-|| Basic Rations [RAT]: 520.3999999999999 ||
-|| Drinking Water [DW]: 260.39999999999986 ||
-|| Weight: 249.52399999999759/1500 | Volume: 201.0799999999994/1500 ||
+|| Basic Rations [RAT]: 520.4 ||
+|| Drinking Water [DW]: 260.4 ||
+|| Weight: 249.52/1500 | Volume: 201.08/1500 ||
 ------------------
 Day 27
 ------------------
@@ -1719,9 +1719,9 @@ Day 27
 || Triglyceride Nuts [NUT]: 26 ||
 || High-Carb Grain [GRN]: 26 ||
 || Protein-Rich Beans [BEA]: 26 ||
-|| Basic Rations [RAT]: 545.5999999999999 ||
-|| Drinking Water [DW]: 267.59999999999985 ||
-|| Weight: 263.33599999999745/1500 | Volume: 213.71999999999932/1500 ||
+|| Basic Rations [RAT]: 545.6 ||
+|| Drinking Water [DW]: 267.6 ||
+|| Weight: 263.34/1500 | Volume: 213.72/1500 ||
 ------------------
 Day 28
 ------------------
@@ -1779,8 +1779,8 @@ Day 28
 || High-Carb Grain [GRN]: 23 ||
 || Protein-Rich Beans [BEA]: 23 ||
 || Basic Rations [RAT]: 560.8 ||
-|| Drinking Water [DW]: 280.79999999999984 ||
-|| Weight: 263.2479999999976/1500 | Volume: 210.75999999999925/1500 ||
+|| Drinking Water [DW]: 280.8 ||
+|| Weight: 263.25/1500 | Volume: 210.76/1500 ||
 ------------------
 Day 29
 ------------------
@@ -1842,8 +1842,8 @@ Day 29
 || High-Carb Grain [GRN]: 21 ||
 || Protein-Rich Beans [BEA]: 21 ||
 || Basic Rations [RAT]: 586.0 ||
-|| Drinking Water [DW]: 287.99999999999983 ||
-|| Weight: 276.05999999999773/1500 | Volume: 221.19999999999916/1500 ||
+|| Drinking Water [DW]: 288.0 ||
+|| Weight: 276.06/1500 | Volume: 221.2/1500 ||
 ------------------
 Day 30
 ------------------
@@ -1856,6 +1856,6 @@ End of Simulation
 || High-Carb Grain [GRN]: 21 ||
 || Protein-Rich Beans [BEA]: 21 ||
 || Basic Rations [RAT]: 586.0 ||
-|| Drinking Water [DW]: 287.99999999999983 ||
-|| Weight: 276.05999999999773/1500 | Volume: 221.19999999999916/1500 ||
+|| Drinking Water [DW]: 288.0 ||
+|| Weight: 276.06/1500 | Volume: 221.2/1500 ||
 ------------------

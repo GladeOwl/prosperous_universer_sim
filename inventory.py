@@ -11,7 +11,7 @@ class Inventory:
         self.current_weight: float = 0
         self.current_volume: float = 0
         self.stock: dict = {}
-        self.stock_history: list = {}
+        self.stock_history: dict = {}
 
     def add_stock(self, item: Item, amount: int, time: tuple):
         """Adds the requested stock to the inventory stock"""
@@ -82,10 +82,10 @@ class Inventory:
         write_text_to_log(f"|| Inventory Stock ||")
         for item in self.stock:
             write_text_to_log(
-                f"|| {item} [{self.stock[item]['info'].ticker}]: {self.stock[item]['amount']} ||"
+                f"|| {item} [{self.stock[item]['info'].ticker}]: {round(self.stock[item]['amount'], 2)} ||"
             )
         write_text_to_log(
-            f"|| Weight: {self.current_weight}/{self.max_weight} | Volume: {self.current_volume}/{self.max_volume} ||"
+            f"|| Weight: {round(self.current_weight, 2)}/{self.max_weight} | Volume: {round(self.current_volume, 2)}/{self.max_volume} ||"
         )
         add_partition()
 
