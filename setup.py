@@ -36,6 +36,7 @@ def setup_item(
         inventory.add_stock(new_item, item["starting_stock"], (0, 0, 0))
 
         log += f"| {new_item.name} [{new_item.ticker}]|"
+
     return log
 
 

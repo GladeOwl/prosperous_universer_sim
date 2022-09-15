@@ -12,7 +12,7 @@ from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
 def simulate_time(base: Base, producers: list):
-    runtime_in_days = 7
+    runtime_in_days = 30
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
@@ -49,7 +49,7 @@ def simulate_time(base: Base, producers: list):
     write_text_to_log("End of Simulation")
     inventory.log_inventory()
 
-    # plot_inventory_stock(inventory, runtime_in_days)
+    plot_inventory_stock(inventory, runtime_in_days)
 
 
 if __name__ == "__main__":
