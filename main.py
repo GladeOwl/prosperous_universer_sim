@@ -1,14 +1,16 @@
 import json
 import math
+from operator import inv
 from base import Base
 from item import Item
+from graph import plot_inventory_stock
 from inventory import Inventory
 from production import Producer
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
 def simulate_time(base: Base, producers: list):
-    runtime_in_days = 365
+    runtime_in_days = 30
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
@@ -31,6 +33,7 @@ def simulate_time(base: Base, producers: list):
 
         if current_day != days:
             base.daily_burn(time)
+            inventory.log_daily_stock()
 
             current_day = days
             add_partition()
@@ -43,6 +46,8 @@ def simulate_time(base: Base, producers: list):
     add_partition()
     write_text_to_log("End of Simulation")
     inventory.log_inventory()
+
+    plot_inventory_stock(inventory, runtime_in_days)
 
 
 def setup_simulation(inventory: Inventory):
@@ -113,3 +118,4 @@ if __name__ == "__main__":
     base, items, producers = setup_simulation(inventory)
 
     simulate_time(base, producers)
+    # print(inventory.stock_history)
