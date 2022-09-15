@@ -23,23 +23,23 @@ class Inventory:
         self.current_weight += item.weight * amount
         self.current_volume += item.volume * amount
 
-        if self.current_weight > self.max_weight:
-            write_to_log(
-                time,
-                "INV",
-                f"Max Weight Limit Exceeded. {self.current_weight}/{self.max_weight}",
-            )
-            self.log_inventory()
-            raise AttributeError("Max Weight Limit Exceeded.")
+        # if self.current_weight > self.max_weight:
+        #     write_to_log(
+        #         time,
+        #         "INV",
+        #         f"Max Weight Limit Exceeded. {self.current_weight}/{self.max_weight}",
+        #     )
+        #     self.log_inventory()
+        #     raise AttributeError("Max Weight Limit Exceeded.")
 
-        if self.current_volume > self.max_volume:
-            write_to_log(
-                time,
-                "INV",
-                f"Max Volume Limit Exceeded. {self.current_volume}/{self.max_volume}",
-            )
-            self.log_inventory()
-            raise AttributeError("Max Volume Limit Exceeded.")
+        # if self.current_volume > self.max_volume:
+        #     write_to_log(
+        #         time,
+        #         "INV",
+        #         f"Max Volume Limit Exceeded. {self.current_volume}/{self.max_volume}",
+        #     )
+        #     self.log_inventory()
+        #     raise AttributeError("Max Volume Limit Exceeded.")
 
         # write_to_log(
         #     f"[{time[0]}D:{time[1]}H:{time[2]}M] [INV] Added: {item.name}, {amount} units"

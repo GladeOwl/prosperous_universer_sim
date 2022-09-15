@@ -21,13 +21,14 @@
                     "reciepe": {},
                     "time": 423,
                     "produced_per_cycle": 6,
-                    "starting_stock": 30
+                    "starting_stock": 30,
+                    "orders": 1
                 }
             ]
         },
         {
             "name": "FRM",
-            "queue_slots": 1,
+            "queue_slots": 2,
             "workforce":{
                 "pioneers": 50,
                 "settlers": 0,
@@ -44,9 +45,23 @@
                     "producer": "FRM",
                     "category": "Agricultural Products",
                     "reciepe": {"H2O": 1},
-                    "time": 2220,
+                    "time": 2160,
                     "produced_per_cycle": 12,
-                    "starting_stock": 10
+                    "starting_stock": 20,
+                    "orders": 1
+                },
+                {
+                    "name": "High-Carb Maize",
+                    "ticker": "MAI",
+                    "weight": 1.3,
+                    "volume": 1,
+                    "producer": "FRM",
+                    "category": "Agricultural Products",
+                    "reciepe": {"H2O": 4},
+                    "time": 2040,
+                    "produced_per_cycle": 12,
+                    "starting_stock": 0,
+                    "orders": 1
                 },
                 {
                     "name": "High-Carb Grain",
@@ -56,9 +71,23 @@
                     "producer": "FRM",
                     "category": "Agricultural Products",
                     "reciepe": {"H2O": 12},
-                    "time": 1680,
+                    "time": 1620,
                     "produced_per_cycle": 12,
-                    "starting_stock": 10
+                    "starting_stock": 20,
+                    "orders": 1
+                },
+                {
+                    "name": "High-Carb Maize",
+                    "ticker": "MAI",
+                    "weight": 1.3,
+                    "volume": 1,
+                    "producer": "FRM",
+                    "category": "Agricultural Products",
+                    "reciepe": {"H2O": 4},
+                    "time": 2040,
+                    "produced_per_cycle": 12,
+                    "starting_stock": 0,
+                    "orders": 1
                 },
                 {
                     "name": "Protein-Rich Beans",
@@ -68,9 +97,23 @@
                     "producer": "FRM",
                     "category": "Agricultural Products",
                     "reciepe": {"H2O": 18},
-                    "time": 1800,
+                    "time": 1740,
                     "produced_per_cycle": 12,
-                    "starting_stock": 10
+                    "starting_stock": 20,
+                    "orders": 1
+                },
+                {
+                    "name": "High-Carb Maize",
+                    "ticker": "MAI",
+                    "weight": 1.3,
+                    "volume": 1,
+                    "producer": "FRM",
+                    "category": "Agricultural Products",
+                    "reciepe": {"H2O": 4},
+                    "time": 2040,
+                    "produced_per_cycle": 12,
+                    "starting_stock": 0,
+                    "orders": 1
                 }
             ]
         },
@@ -95,7 +138,8 @@
                     "reciepe": {"GRN": 1,"NUT": 1,"BEA": 1},
                     "time": 424,
                     "produced_per_cycle": 10,
-                    "starting_stock": 0
+                    "starting_stock": 20,
+                    "orders": 1
                 },
                 {
                     "name": "Drinking Water",
@@ -107,31 +151,32 @@
                     "reciepe": {"H2O": 10},
                     "time": 170,
                     "produced_per_cycle": 6,
-                    "starting_stock": 0
+                    "starting_stock": 20,
+                    "orders": 1
                 }
             ]
         }
     ],
     "workforce": {
         "pioneers": {
-            "RAT": 4.8,
-            "DW": 4.8
+            "RAT": 0.04,
+            "DW": 0.04
         },
         "settlers": {
-            "RAT": 6,
-            "DW": 5
+            "RAT": 0.06,
+            "DW": 0.05
         },
         "technicians": {
-            "RAT": 7,
-            "DW": 7.5
+            "RAT": 0.07,
+            "DW": 0.075
         },
         "engineers": {
             "RAT": 0,
-            "DW": 10
+            "DW": 0.010
         },
         "scientists": {
             "RAT": 0,
-            "DW": 10
+            "DW": 0.1
         }
     }
 }
