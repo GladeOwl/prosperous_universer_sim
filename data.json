@@ -111,5 +111,27 @@
                 }
             ]
         }
-    ]
+    ],
+    "workforce": {
+        "pioneers": {
+            "RAT": 4.8,
+            "DW": 4.8
+        },
+        "settlers": {
+            "RAT": 6,
+            "DW": 5
+        },
+        "technicians": {
+            "RAT": 7,
+            "DW": 7.5
+        },
+        "engineers": {
+            "RAT": 0,
+            "DW": 10
+        },
+        "scientists": {
+            "RAT": 0,
+            "DW": 10
+        }
+    }
 }

@@ -1,13 +1,14 @@
 import json
 import math
-from logger import create_log, write_to_log, add_partition, write_text_to_log
+from base import Base
+from item import Item
 from inventory import Inventory
 from production import Producer
-from item import Item
+from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-def simulate_time(producers: list):
-    runtime_in_days = 60
+def simulate_time(base: Base, producers: list):
+    runtime_in_days = 365
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
 
@@ -29,6 +30,8 @@ def simulate_time(producers: list):
             producer.tick(time)
 
         if current_day != days:
+            base.daily_burn(time)
+
             current_day = days
             add_partition()
             inventory.log_inventory()
@@ -50,12 +53,14 @@ def setup_simulation(inventory: Inventory):
     producers = []
     with open("./data.json", encoding="utf-8") as jsonf:
         data = json.load(jsonf)
+        base = Base("Harmonia", inventory, [], data["workforce"])
         for producer in data["producers"]:
             new_producer = Producer(
                 name=producer["name"],
                 queue=[],
                 queue_slots=producer["queue_slots"],
                 inventory=inventory,
+                workforce=producer["workforce"],
             )
 
             producer_log = f"{new_producer.name}: "
@@ -73,6 +78,9 @@ def setup_simulation(inventory: Inventory):
                     produced_per_cycle=item["produced_per_cycle"],
                 )
 
+                if "Consumables" in new_item.category:
+                    base.consumables.append(new_item)
+
                 items.append(new_item)
                 new_producer.queue.append(new_item)
                 inventory.add_stock(new_item, item["starting_stock"], (0, 0, 0))
@@ -80,7 +88,9 @@ def setup_simulation(inventory: Inventory):
 
             write_text_to_log(producer_log)
             producers.append(new_producer)
+            base.add_base_pop(new_producer.workforce)
 
+    base.get_total_pop()
     for item in items:
         item.setup_reciepe(items)
 
@@ -92,7 +102,7 @@ def setup_simulation(inventory: Inventory):
     for producer in producers:
         producer.initial_production((0, 0, 0))
 
-    return items, producers
+    return base, items, producers
 
 
 if __name__ == "__main__":
@@ -100,6 +110,6 @@ if __name__ == "__main__":
     max_volume = 1500
     inventory = Inventory(max_weight, max_volume)
 
-    items, producers = setup_simulation(inventory)
+    base, items, producers = setup_simulation(inventory)
 
-    simulate_time(producers)
+    simulate_time(base, producers)
