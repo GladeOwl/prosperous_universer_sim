@@ -80,9 +80,9 @@ class Inventory:
         write_text_to_log(f"|| Inventory Stock ||")
         for item in self.stock:
             write_text_to_log(
-                f"|| {item} [{self.stock[item]['info'].ticker}]: {round(self.stock[item]['amount'], 2)} ||"
+                f"|| {item} [{self.stock[item]['info'].ticker}]: {self.stock[item]['amount']} ||"
             )
         write_text_to_log(
-            f"|| Weight: {round(self.current_weight, 2)}/{self.max_weight} | Volume: {round(self.current_volume, 2)}/{self.max_volume} ||"
+            f"|| Weight: {self.current_weight}/{self.max_weight} | Volume: {self.current_volume}/{self.max_volume} ||"
         )
         add_partition()
