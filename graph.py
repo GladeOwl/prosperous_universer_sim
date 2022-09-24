@@ -1,7 +1,4 @@
-from cProfile import label
-import string
 import math
-import numpy as np
 from inventory import Inventory
 from matplotlib import pyplot as plot
 
@@ -18,14 +15,14 @@ def plot_inventory_stock(inventory: Inventory, days: int):
     rows = int(math.ceil(number_of_items / column))
 
     for item in stock_history:
-        plot.subplot(
-            rows,
-            column,
-            index,
-        )
+        # plot.subplot(
+        #     rows,
+        #     column,
+        #     index,
+        # )
         plot.plot(days_in_graph, stock_history[item], label=item)
         plot.title(item)
-        index += 1
+        # index += 1
 
-    # plot.legend()
+    plot.legend()
     plot.show()

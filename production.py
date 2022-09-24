@@ -60,8 +60,9 @@ class Producer:
         self.queue: list = queue
         self.queue_slots = queue_slots
         self.inventory: Inventory = inventory
-        self.current_production = []
-        self.workforce = workforce
+        self.current_production: list = []
+        self.workforce: dict = workforce
+        self.current_production_index: int = 0
 
     def tick(self, time: tuple):
         """Ticks the production by 1"""
@@ -80,8 +81,16 @@ class Producer:
         self.setup_production(time)
 
     def setup_production(self, time):
-        item = self.queue.pop(0)
+        item = self.queue[self.current_production_index]
+        # item = self.queue.pop(0)
+
         production = Production(item, self, self.inventory)
         production.withdraw_resources(time)
         self.current_production.append(production)
-        self.queue.append(item)
+
+        if self.current_production_index < len(self.queue) - 1:
+            self.current_production_index += 1
+        else:
+            self.current_production_index = 0
+
+        # self.queue.append(item)
