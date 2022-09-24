@@ -3,7 +3,7 @@ from inventory import Inventory
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-class Base:
+class Outpost:
     def __init__(
         self, name: string, inventory: Inventory, consumables: list, needs: dict
     ) -> None:

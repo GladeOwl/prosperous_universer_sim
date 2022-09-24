@@ -2,7 +2,7 @@
     "producers":[
         {
             "name": "RIG",
-            "queue_slots": 2,
+            "queue_slots": 3,
             "workforce":{
                 "pioneers": 30,
                 "settlers": 0,
@@ -21,14 +21,14 @@
                     "reciepe": {},
                     "time": 423,
                     "produced_per_cycle": 6,
-                    "starting_stock": 30,
+                    "starting_stock": 100,
                     "orders": 1
                 }
             ]
         },
         {
             "name": "FRM",
-            "queue_slots": 2,
+            "queue_slots": 4,
             "workforce":{
                 "pioneers": 50,
                 "settlers": 0,

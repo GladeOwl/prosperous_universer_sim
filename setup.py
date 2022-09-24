@@ -1,6 +1,6 @@
 import json
 import string
-from base import Base
+from outpost import Outpost
 from item import Item
 from inventory import Inventory
 from production import Producer
@@ -13,7 +13,7 @@ def setup_item(
     log: string,
     items: list,
     inventory: Inventory,
-    base: Base,
+    base: Outpost,
 ):
     for item in producer["items"]:
         new_item = Item(
@@ -49,7 +49,7 @@ def setup_simulation(inventory: Inventory):
 
     with open("./data.json", encoding="utf-8") as jsonf:
         data = json.load(jsonf)
-        base = Base("Harmonia", inventory, [], data["workforce"])
+        base = Outpost("Harmonia", inventory, [], data["workforce"])
 
         for producer in data["producers"]:
             new_producer = Producer(

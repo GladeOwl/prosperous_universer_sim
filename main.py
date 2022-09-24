@@ -2,7 +2,7 @@ import json
 import math
 import string
 from operator import inv
-from base import Base
+from outpost import Outpost
 from item import Item
 from graph import plot_inventory_stock
 from inventory import Inventory
@@ -11,7 +11,7 @@ from setup import setup_simulation
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-def simulate_time(base: Base, producers: list):
+def simulate_time(base: Outpost, producers: list):
     runtime_in_days = 30
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
