@@ -3,15 +3,17 @@ import math
 from operator import inv
 from base import Base
 from item import Item
-from graph import plot_inventory_stock
+from graph import plot_inventory_stock, Graph
 from inventory import Inventory
 from production import Producer
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-def simulate_time(base: Base, producers: list):
-    runtime_in_days = 30
-    max_runtime: int = runtime_in_days * 1440
+TOTAL_RUNTIME = 30
+
+
+def simulate_time(base: Base, producers: list, graph: Graph):
+    max_runtime: int = TOTAL_RUNTIME * 1440
     runtime: int = 0  # in minutes
 
     days = 0
@@ -34,6 +36,7 @@ def simulate_time(base: Base, producers: list):
         if current_day != days:
             base.daily_burn(time)
             inventory.log_daily_stock()
+            # graph.update_graph()
 
             current_day = days
             add_partition()
@@ -46,8 +49,7 @@ def simulate_time(base: Base, producers: list):
     add_partition()
     write_text_to_log("End of Simulation")
     inventory.log_inventory()
-
-    plot_inventory_stock(inventory, runtime_in_days)
+    # plot_inventory_stock(inventory, current_day)
 
 
 def setup_simulation(inventory: Inventory):
@@ -99,6 +101,9 @@ def setup_simulation(inventory: Inventory):
     for item in items:
         item.setup_reciepe(items)
 
+    inventory.log_daily_stock
+    graph = Graph(inventory, TOTAL_RUNTIME)
+
     write_text_to_log("Simluation Setup Completed.")
     add_partition()
     write_text_to_log(f"Simulation Start")
@@ -107,7 +112,7 @@ def setup_simulation(inventory: Inventory):
     for producer in producers:
         producer.initial_production((0, 0, 0))
 
-    return base, items, producers
+    return base, items, producers, graph
 
 
 if __name__ == "__main__":
@@ -115,7 +120,7 @@ if __name__ == "__main__":
     max_volume = 1500
     inventory = Inventory(max_weight, max_volume)
 
-    base, items, producers = setup_simulation(inventory)
+    base, items, producers, graph = setup_simulation(inventory)
 
-    simulate_time(base, producers)
+    simulate_time(base, producers, graph)
     # print(inventory.stock_history)
