@@ -1,2 +1,6 @@
 dump.txt
+<<<<<<< HEAD
 __pycache__
+=======
+simulation_logs.md
+>>>>>>> f98898209476c286de58608836607847f5ec5d7b

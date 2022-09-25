@@ -1,15 +1,17 @@
 import json
 import math
+import string
 from operator import inv
-from base import Base
+from outpost import Outpost
 from item import Item
 from graph import plot_inventory_stock
 from inventory import Inventory
 from production import Producer
+from setup import setup_simulation
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-def simulate_time(base: Base, producers: list):
+def simulate_time(base: Outpost, producers: list):
     runtime_in_days = 30
     max_runtime: int = runtime_in_days * 1440
     runtime: int = 0  # in minutes
@@ -48,66 +50,6 @@ def simulate_time(base: Base, producers: list):
     inventory.log_inventory()
 
     plot_inventory_stock(inventory, runtime_in_days)
-
-
-def setup_simulation(inventory: Inventory):
-    create_log()
-    add_partition()
-
-    items = []
-    producers = []
-    with open("./data.json", encoding="utf-8") as jsonf:
-        data = json.load(jsonf)
-        base = Base("Harmonia", inventory, [], data["workforce"])
-        for producer in data["producers"]:
-            new_producer = Producer(
-                name=producer["name"],
-                queue=[],
-                queue_slots=producer["queue_slots"],
-                inventory=inventory,
-                workforce=producer["workforce"],
-            )
-
-            producer_log = f"{new_producer.name}: "
-
-            for item in producer["items"]:
-                new_item = Item(
-                    name=item["name"],
-                    ticker=item["ticker"],
-                    weight=item["weight"],
-                    volume=item["volume"],
-                    producer=item["producer"],
-                    category=item["category"],
-                    reciepe_raw=item["reciepe"],
-                    time=item["time"],
-                    produced_per_cycle=item["produced_per_cycle"],
-                )
-
-                if "Consumables" in new_item.category:
-                    base.consumables.append(new_item)
-
-                items.append(new_item)
-                new_producer.queue.append(new_item)
-                inventory.add_stock(new_item, item["starting_stock"], (0, 0, 0))
-                producer_log += f"| {new_item.name} [{new_item.ticker}]|"
-
-            write_text_to_log(producer_log)
-            producers.append(new_producer)
-            base.add_base_pop(new_producer.workforce)
-
-    base.get_total_pop()
-    for item in items:
-        item.setup_reciepe(items)
-
-    write_text_to_log("Simluation Setup Completed.")
-    add_partition()
-    write_text_to_log(f"Simulation Start")
-    inventory.log_inventory()
-
-    for producer in producers:
-        producer.initial_production((0, 0, 0))
-
-    return base, items, producers
 
 
 if __name__ == "__main__":

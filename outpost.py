@@ -3,7 +3,7 @@ from inventory import Inventory
 from logger import create_log, write_to_log, add_partition, write_text_to_log
 
 
-class Base:
+class Outpost:
     def __init__(
         self, name: string, inventory: Inventory, consumables: list, needs: dict
     ) -> None:
@@ -18,12 +18,12 @@ class Base:
         self.engineers: int = 0
         self.scientists: int = 0
 
-    def add_base_pop(self, pop: dict):
-        self.pioneers += pop["pioneers"]
-        self.settlers += pop["settlers"]
-        self.technicians += pop["technicians"]
-        self.engineers += pop["engineers"]
-        self.scientists += pop["scientists"]
+    def add_base_pop(self, pop: dict, amount: int):
+        self.pioneers += pop["pioneers"] * amount
+        self.settlers += pop["settlers"] * amount
+        self.technicians += pop["technicians"] * amount
+        self.engineers += pop["engineers"] * amount
+        self.scientists += pop["scientists"] * amount
 
     def get_total_pop(self):
         write_text_to_log(
@@ -35,5 +35,5 @@ class Base:
             for item in self.consumables:
                 if need == item.ticker:
                     self.inventory.remove_stock(
-                        item, self.needs["pioneers"][need], time
+                        item, self.needs["pioneers"][need] * self.pioneers, time
                     )
